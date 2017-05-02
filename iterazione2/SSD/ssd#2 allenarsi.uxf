@@ -54,7 +54,7 @@ bg=pink</panel_attributes>
       <w>216</w>
       <h>36</h>
     </coordinates>
-    <panel_attributes>lt=-&gt;
+    <panel_attributes>lt=-&gt;&gt;&gt;
 inizioAllenamento()</panel_attributes>
     <additional_attributes>10.0;20.0;220.0;20.0</additional_attributes>
   </element>
@@ -62,11 +62,11 @@ inizioAllenamento()</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>324</x>
-      <y>189</y>
+      <y>198</y>
       <w>216</w>
       <h>36</h>
     </coordinates>
-    <panel_attributes>lt=-&gt;
+    <panel_attributes>lt=-&gt;&gt;&gt;
 sceltaRobodromo(robodromo)</panel_attributes>
     <additional_attributes>10.0;20.0;220.0;20.0</additional_attributes>
   </element>
@@ -79,7 +79,7 @@ sceltaRobodromo(robodromo)</panel_attributes>
       <h>45</h>
     </coordinates>
     <panel_attributes>lt=.&gt;
-invia lista
+lista
 robodromi</panel_attributes>
     <additional_attributes>220.0;20.0;10.0;20.0</additional_attributes>
   </element>
@@ -87,47 +87,21 @@ robodromi</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>324</x>
-      <y>216</y>
-      <w>216</w>
-      <h>45</h>
-    </coordinates>
-    <panel_attributes>lt=.&gt;
-conferma
-selezione</panel_attributes>
-    <additional_attributes>220.0;20.0;10.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>324</x>
-      <y>378</y>
+      <y>387</y>
       <w>216</w>
       <h>36</h>
     </coordinates>
-    <panel_attributes>lt=-&gt;
+    <panel_attributes>lt=-&gt;&gt;&gt;
 posizionaRobot(pos)</panel_attributes>
     <additional_attributes>10.0;20.0;220.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>324</x>
-      <y>405</y>
-      <w>216</w>
-      <h>45</h>
-    </coordinates>
-    <panel_attributes>lt=.&gt;
-mostra robot
-posizionato</panel_attributes>
-    <additional_attributes>220.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLFrame</id>
     <coordinates>
       <x>216</x>
-      <y>288</y>
+      <y>279</y>
       <w>432</w>
-      <h>45</h>
+      <h>72</h>
     </coordinates>
     <panel_attributes>ref
 --
@@ -142,21 +116,9 @@ posizionato</panel_attributes>
       <w>216</w>
       <h>36</h>
     </coordinates>
-    <panel_attributes>lt=-&gt;
+    <panel_attributes>lt=-&gt;&gt;&gt;
 eseguiProg()</panel_attributes>
     <additional_attributes>10.0;20.0;220.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>324</x>
-      <y>468</y>
-      <w>216</w>
-      <h>36</h>
-    </coordinates>
-    <panel_attributes>lt=.&gt;
-conferma</panel_attributes>
-    <additional_attributes>220.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
@@ -190,30 +152,17 @@ programma</panel_attributes>
       <w>216</w>
       <h>36</h>
     </coordinates>
-    <panel_attributes>lt=-&gt;
+    <panel_attributes>lt=-&gt;&gt;&gt;
 terminaAllenamento()</panel_attributes>
     <additional_attributes>10.0;20.0;220.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>324</x>
-      <y>684</y>
-      <w>216</w>
-      <h>45</h>
-    </coordinates>
-    <panel_attributes>lt=.&gt;
-escedalla modalità
-allenamento</panel_attributes>
-    <additional_attributes>220.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLFrame</id>
     <coordinates>
       <x>216</x>
-      <y>513</y>
+      <y>504</y>
       <w>432</w>
-      <h>72</h>
+      <h>90</h>
     </coordinates>
     <panel_attributes>loop
 --
@@ -224,13 +173,12 @@ allenamento</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>324</x>
-      <y>522</y>
+      <y>549</y>
       <w>216</w>
-      <h>45</h>
+      <h>36</h>
     </coordinates>
-    <panel_attributes>lt=-&gt;
-mostra passo 
-d'esecuzione</panel_attributes>
+    <panel_attributes>lt=.&gt;
+nuovo stato</panel_attributes>
     <additional_attributes>220.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
@@ -276,5 +224,28 @@ d'esecuzione</panel_attributes>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>522</x>
+      <y>531</y>
+      <w>18</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>324</x>
+      <y>522</y>
+      <w>216</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;
+statoSuccessivo(cStato)</panel_attributes>
+    <additional_attributes>10.0;20.0;220.0;20.0</additional_attributes>
   </element>
 </diagram>

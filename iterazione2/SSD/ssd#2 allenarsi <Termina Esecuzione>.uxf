@@ -3,7 +3,7 @@
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>360</x>
+      <x>400</x>
       <y>0</y>
       <w>64</w>
       <h>80</h>
@@ -15,7 +15,7 @@ bg=blue</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>536</x>
+      <x>576</x>
       <y>40</y>
       <w>80</w>
       <h>24</h>
@@ -27,7 +27,7 @@ bg=pink</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>568</x>
+      <x>608</x>
       <y>56</y>
       <w>24</w>
       <h>776</h>
@@ -38,7 +38,7 @@ bg=pink</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>392</x>
+      <x>432</x>
       <y>64</y>
       <w>24</w>
       <h>760</h>
@@ -49,95 +49,70 @@ bg=pink</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>392</x>
+      <x>432</x>
       <y>96</y>
       <w>192</w>
       <h>32</h>
     </coordinates>
-    <panel_attributes>lt=-&gt;
+    <panel_attributes>lt=-&gt;&gt;&gt;
 inviaInizioAllenamento()</panel_attributes>
     <additional_attributes>10.0;20.0;220.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>312</x>
+      <x>352</x>
       <y>288</y>
       <w>360</w>
       <h>488</h>
     </coordinates>
-    <panel_attributes>loop
+    <panel_attributes>halign=left
+loop
 --
-[attore vuole ricominicare esecuzione]</panel_attributes>
+*[finchè l'attore vuole ricominicare esecuzione]*</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>392</x>
-      <y>168</y>
+      <x>432</x>
+      <y>176</y>
       <w>192</w>
       <h>32</h>
     </coordinates>
-    <panel_attributes>lt=-&gt;
+    <panel_attributes>lt=-&gt;&gt;&gt;
 sceltaRobodromo(robodromo)</panel_attributes>
     <additional_attributes>10.0;20.0;220.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>392</x>
+      <x>432</x>
       <y>120</y>
       <w>192</w>
       <h>40</h>
     </coordinates>
     <panel_attributes>lt=.&gt;
-invia lista
+lista
 robodromi</panel_attributes>
     <additional_attributes>220.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>392</x>
-      <y>192</y>
-      <w>192</w>
-      <h>40</h>
-    </coordinates>
-    <panel_attributes>lt=.&gt;
-conferma
-selezione</panel_attributes>
-    <additional_attributes>220.0;20.0;10.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>392</x>
-      <y>336</y>
+      <x>432</x>
+      <y>344</y>
       <w>192</w>
       <h>32</h>
     </coordinates>
-    <panel_attributes>lt=-&gt;
+    <panel_attributes>lt=-&gt;&gt;&gt;
 posizionaRobot(pos)</panel_attributes>
     <additional_attributes>10.0;20.0;220.0;20.0</additional_attributes>
   </element>
   <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>392</x>
-      <y>360</y>
-      <w>192</w>
-      <h>40</h>
-    </coordinates>
-    <panel_attributes>lt=.&gt;
-mostra robot
-posizionato</panel_attributes>
-    <additional_attributes>220.0;20.0;10.0;20.0</additional_attributes>
-  </element>
-  <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>312</x>
+      <x>352</x>
       <y>232</y>
       <w>360</w>
       <h>40</h>
@@ -150,64 +125,39 @@ posizionato</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>392</x>
+      <x>432</x>
       <y>400</y>
       <w>192</w>
       <h>32</h>
     </coordinates>
-    <panel_attributes>lt=-&gt;
+    <panel_attributes>lt=-&gt;&gt;&gt;
 eseguiProg()</panel_attributes>
     <additional_attributes>10.0;20.0;220.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>392</x>
-      <y>416</y>
-      <w>192</w>
-      <h>40</h>
-    </coordinates>
-    <panel_attributes>lt=.&gt;
-conferma
-esecuzione</panel_attributes>
-    <additional_attributes>220.0;20.0;10.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>392</x>
-      <y>528</y>
+      <x>432</x>
+      <y>536</y>
       <w>192</w>
       <h>32</h>
     </coordinates>
-    <panel_attributes>lt=-&gt;
+    <panel_attributes>lt=-&gt;&gt;&gt;
 terminaEsecuzione()</panel_attributes>
     <additional_attributes>10.0;20.0;220.0;20.0</additional_attributes>
   </element>
   <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>392</x>
-      <y>552</y>
-      <w>192</w>
-      <h>40</h>
-    </coordinates>
-    <panel_attributes>lt=.&gt;
-ferma esecuzione
-reset stato</panel_attributes>
-    <additional_attributes>220.0;20.0;10.0;20.0</additional_attributes>
-  </element>
-  <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>336</x>
+      <x>376</x>
       <y>600</y>
       <w>312</w>
       <h>152</h>
     </coordinates>
-    <panel_attributes>opt
+    <panel_attributes>halign=left
+opt
 --
-[modifica programma]
+*[se vuole modificare programma]*
 
 
 
@@ -219,7 +169,7 @@ reset stato</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>368</x>
+      <x>408</x>
       <y>672</y>
       <w>240</w>
       <h>56</h>
@@ -232,8 +182,8 @@ reset stato</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>328</x>
-      <y>456</y>
+      <x>368</x>
+      <y>448</y>
       <w>328</w>
       <h>64</h>
     </coordinates>
@@ -243,22 +193,9 @@ reset stato</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>392</x>
-      <y>472</y>
-      <w>200</w>
-      <h>40</h>
-    </coordinates>
-    <panel_attributes>lt=-&gt;
-mostra passo 
-d'esecuzione</panel_attributes>
-    <additional_attributes>230.0;20.0;10.0;20.0</additional_attributes>
-  </element>
-  <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>568</x>
+      <x>608</x>
       <y>96</y>
       <w>16</w>
       <h>48</h>
@@ -269,7 +206,7 @@ d'esecuzione</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>568</x>
+      <x>608</x>
       <y>168</y>
       <w>16</w>
       <h>48</h>
@@ -280,7 +217,7 @@ d'esecuzione</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>568</x>
+      <x>608</x>
       <y>336</y>
       <w>16</w>
       <h>48</h>
@@ -291,10 +228,10 @@ d'esecuzione</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>568</x>
+      <x>608</x>
       <y>400</y>
       <w>16</w>
-      <h>48</h>
+      <h>40</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -302,10 +239,45 @@ d'esecuzione</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>568</x>
+      <x>608</x>
       <y>528</y>
       <w>16</w>
       <h>48</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>432</x>
+      <y>456</y>
+      <w>192</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;
+statoSuccessivo(cStato)</panel_attributes>
+    <additional_attributes>10.0;20.0;220.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>432</x>
+      <y>480</y>
+      <w>192</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+nuovo stato</panel_attributes>
+    <additional_attributes>220.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>608</x>
+      <y>464</y>
+      <w>16</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>

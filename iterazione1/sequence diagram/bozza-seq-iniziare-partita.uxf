@@ -39,10 +39,10 @@
       <x>153</x>
       <y>135</y>
       <w>27</w>
-      <h>423</h>
+      <h>432</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;450.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;460.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>

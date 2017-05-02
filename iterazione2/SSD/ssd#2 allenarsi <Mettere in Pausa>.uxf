@@ -54,7 +54,7 @@ bg=pink</panel_attributes>
       <w>192</w>
       <h>32</h>
     </coordinates>
-    <panel_attributes>lt=-&gt;
+    <panel_attributes>lt=-&gt;&gt;&gt;
 inviaInizioAllenamento()</panel_attributes>
     <additional_attributes>10.0;20.0;220.0;20.0</additional_attributes>
   </element>
@@ -66,7 +66,7 @@ inviaInizioAllenamento()</panel_attributes>
       <w>192</w>
       <h>32</h>
     </coordinates>
-    <panel_attributes>lt=-&gt;
+    <panel_attributes>lt=-&gt;&gt;&gt;
 sceltaRobodromo(robodromo)</panel_attributes>
     <additional_attributes>10.0;20.0;220.0;20.0</additional_attributes>
   </element>
@@ -79,7 +79,7 @@ sceltaRobodromo(robodromo)</panel_attributes>
       <h>40</h>
     </coordinates>
     <panel_attributes>lt=.&gt;
-invia lista
+lista
 robodromi</panel_attributes>
     <additional_attributes>220.0;20.0;10.0;20.0</additional_attributes>
   </element>
@@ -87,24 +87,11 @@ robodromi</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>328</x>
-      <y>192</y>
-      <w>192</w>
-      <h>40</h>
-    </coordinates>
-    <panel_attributes>lt=.&gt;
-conferma
-selezione</panel_attributes>
-    <additional_attributes>220.0;20.0;10.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>328</x>
-      <y>320</y>
+      <y>328</y>
       <w>192</w>
       <h>32</h>
     </coordinates>
-    <panel_attributes>lt=-&gt;
+    <panel_attributes>lt=-&gt;&gt;&gt;
 posizionaRobot(pos)</panel_attributes>
     <additional_attributes>10.0;20.0;220.0;20.0</additional_attributes>
   </element>
@@ -116,7 +103,7 @@ posizionaRobot(pos)</panel_attributes>
       <w>192</w>
       <h>32</h>
     </coordinates>
-    <panel_attributes>lt=-&gt;
+    <panel_attributes>lt=-&gt;&gt;&gt;
 vaiAlloStato(stato)</panel_attributes>
     <additional_attributes>10.0;20.0;220.0;20.0</additional_attributes>
   </element>
@@ -126,43 +113,30 @@ vaiAlloStato(stato)</panel_attributes>
       <x>328</x>
       <y>688</y>
       <w>192</w>
-      <h>40</h>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=.&gt;
-mostra cambiamento
-di stato</panel_attributes>
+stato precedente</panel_attributes>
     <additional_attributes>220.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>328</x>
-      <y>792</y>
+      <y>800</y>
       <w>192</w>
       <h>32</h>
     </coordinates>
-    <panel_attributes>lt=-&gt;
+    <panel_attributes>lt=-&gt;&gt;&gt;
 resume()</panel_attributes>
     <additional_attributes>10.0;20.0;220.0;20.0</additional_attributes>
   </element>
   <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>328</x>
-      <y>808</y>
-      <w>192</w>
-      <h>32</h>
-    </coordinates>
-    <panel_attributes>lt=.&gt;
-riprende esecuzione</panel_attributes>
-    <additional_attributes>220.0;20.0;10.0;20.0</additional_attributes>
-  </element>
-  <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>248</x>
-      <y>248</y>
-      <w>368</w>
+      <x>232</x>
+      <y>240</y>
+      <w>376</w>
       <h>40</h>
     </coordinates>
     <panel_attributes>ref
@@ -174,11 +148,11 @@ riprende esecuzione</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>328</x>
-      <y>384</y>
+      <y>392</y>
       <w>192</w>
       <h>32</h>
     </coordinates>
-    <panel_attributes>lt=-&gt;
+    <panel_attributes>lt=-&gt;&gt;&gt;
 eseguiProg()</panel_attributes>
     <additional_attributes>10.0;20.0;220.0;20.0</additional_attributes>
   </element>
@@ -186,39 +160,13 @@ eseguiProg()</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>328</x>
-      <y>400</y>
-      <w>192</w>
-      <h>40</h>
-    </coordinates>
-    <panel_attributes>lt=.&gt;
-mostra
-esecuzione</panel_attributes>
-    <additional_attributes>220.0;20.0;10.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>328</x>
-      <y>520</y>
+      <y>528</y>
       <w>192</w>
       <h>32</h>
     </coordinates>
-    <panel_attributes>lt=-&gt;
+    <panel_attributes>lt=-&gt;&gt;&gt;
 metteInPausa()</panel_attributes>
     <additional_attributes>10.0;20.0;220.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>328</x>
-      <y>544</y>
-      <w>192</w>
-      <h>40</h>
-    </coordinates>
-    <panel_attributes>lt=.&gt;
-mette in pausa
-l'esecuzione</panel_attributes>
-    <additional_attributes>220.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLFrame</id>
@@ -228,9 +176,10 @@ l'esecuzione</panel_attributes>
       <w>368</w>
       <h>408</h>
     </coordinates>
-    <panel_attributes>loop
+    <panel_attributes>halign=left
+loop
 --
-*[mette in pausa]*</panel_attributes>
+*[finchè l'attore mette in pausa]*</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -241,9 +190,10 @@ l'esecuzione</panel_attributes>
       <w>336</w>
       <h>176</h>
     </coordinates>
-    <panel_attributes>opt
+    <panel_attributes>halign=left
+opt
 --
-*[andare a stato preceednte]*</panel_attributes>
+*[se vuole andare a stato precedente]*</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -256,19 +206,6 @@ l'esecuzione</panel_attributes>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>328</x>
-      <y>344</y>
-      <w>192</w>
-      <h>40</h>
-    </coordinates>
-    <panel_attributes>lt=.&gt;
-mostra robot
-posizionato</panel_attributes>
-    <additional_attributes>220.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
