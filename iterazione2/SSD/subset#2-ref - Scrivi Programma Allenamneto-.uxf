@@ -1,12 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?><diagram program="umlet" version="13.3">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
   <zoom_level>9</zoom_level>
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>225</x>
-      <y>36</y>
+      <x>846</x>
+      <y>99</y>
       <w>72</w>
-      <h>90</h>
+      <h>99</h>
     </coordinates>
     <panel_attributes>Giocatore
 bg=blue</panel_attributes>
@@ -15,8 +16,8 @@ bg=blue</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>432</x>
-      <y>81</y>
+      <x>1053</x>
+      <y>144</y>
       <w>90</w>
       <h>27</h>
     </coordinates>
@@ -27,8 +28,8 @@ bg=pink</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>252</x>
-      <y>126</y>
+      <x>873</x>
+      <y>189</y>
       <w>234</w>
       <h>36</h>
     </coordinates>
@@ -39,8 +40,8 @@ richiediPoolIstruzioni()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>468</x>
-      <y>99</y>
+      <x>1089</x>
+      <y>162</y>
       <w>27</w>
       <h>558</h>
     </coordinates>
@@ -50,8 +51,8 @@ richiediPoolIstruzioni()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>252</x>
-      <y>117</y>
+      <x>873</x>
+      <y>180</y>
       <w>27</w>
       <h>513</h>
     </coordinates>
@@ -61,8 +62,8 @@ richiediPoolIstruzioni()</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>468</x>
-      <y>135</y>
+      <x>1089</x>
+      <y>198</y>
       <w>18</w>
       <h>54</h>
     </coordinates>
@@ -72,8 +73,8 @@ richiediPoolIstruzioni()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>252</x>
-      <y>153</y>
+      <x>873</x>
+      <y>216</y>
       <w>234</w>
       <h>45</h>
     </coordinates>
@@ -85,8 +86,8 @@ istruzioni base</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>144</x>
-      <y>270</y>
+      <x>765</x>
+      <y>333</y>
       <w>477</w>
       <h>279</h>
     </coordinates>
@@ -99,8 +100,8 @@ loop
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>162</x>
-      <y>333</y>
+      <x>783</x>
+      <y>396</y>
       <w>423</w>
       <h>189</h>
     </coordinates>
@@ -121,8 +122,8 @@ alt
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>252</x>
-      <y>342</y>
+      <x>873</x>
+      <y>405</y>
       <w>234</w>
       <h>36</h>
     </coordinates>
@@ -133,8 +134,8 @@ aggiugiScheda(scheda)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>252</x>
-      <y>414</y>
+      <x>873</x>
+      <y>477</y>
       <w>234</w>
       <h>36</h>
     </coordinates>
@@ -145,8 +146,8 @@ eliminaScheda(scheda)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>252</x>
-      <y>477</y>
+      <x>873</x>
+      <y>540</y>
       <w>234</w>
       <h>36</h>
     </coordinates>
@@ -157,20 +158,20 @@ modificaOrdine(scheda1, scheda2)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>252</x>
-      <y>198</y>
+      <x>873</x>
+      <y>261</y>
       <w>234</w>
       <h>36</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-creaListaIstruzioni()</panel_attributes>
+creaProgramma()</panel_attributes>
     <additional_attributes>10.0;20.0;240.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>468</x>
-      <y>207</y>
+      <x>1089</x>
+      <y>270</y>
       <w>18</w>
       <h>54</h>
     </coordinates>
@@ -180,8 +181,8 @@ creaListaIstruzioni()</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>468</x>
-      <y>351</y>
+      <x>1089</x>
+      <y>414</y>
       <w>18</w>
       <h>36</h>
     </coordinates>
@@ -191,8 +192,8 @@ creaListaIstruzioni()</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>468</x>
-      <y>423</y>
+      <x>1089</x>
+      <y>486</y>
       <w>18</w>
       <h>36</h>
     </coordinates>
@@ -202,8 +203,8 @@ creaListaIstruzioni()</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>468</x>
-      <y>477</y>
+      <x>1089</x>
+      <y>540</y>
       <w>18</w>
       <h>36</h>
     </coordinates>
