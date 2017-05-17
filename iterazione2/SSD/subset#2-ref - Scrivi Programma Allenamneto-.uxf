@@ -122,43 +122,43 @@ alt
     <id>Relation</id>
     <coordinates>
       <x>252</x>
-      <y>351</y>
-      <w>243</w>
+      <y>342</y>
+      <w>234</w>
       <h>36</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-aggiugiIstruzione(istr)</panel_attributes>
-    <additional_attributes>10.0;20.0;250.0;20.0</additional_attributes>
+aggiugiScheda(scheda)</panel_attributes>
+    <additional_attributes>10.0;20.0;240.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>252</x>
       <y>414</y>
-      <w>243</w>
+      <w>234</w>
       <h>36</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-eliminaIstruzione(istr)</panel_attributes>
-    <additional_attributes>10.0;20.0;250.0;20.0</additional_attributes>
+eliminaScheda(scheda)</panel_attributes>
+    <additional_attributes>10.0;20.0;240.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>252</x>
       <y>477</y>
-      <w>243</w>
+      <w>234</w>
       <h>36</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-modificaOrdineIstr(istr1, istr2)</panel_attributes>
-    <additional_attributes>10.0;20.0;250.0;20.0</additional_attributes>
+modificaOrdine(scheda1, scheda2)</panel_attributes>
+    <additional_attributes>10.0;20.0;240.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>252</x>
-      <y>207</y>
+      <y>198</y>
       <w>234</w>
       <h>36</h>
     </coordinates>
@@ -170,9 +170,42 @@ creaListaIstruzioni()</panel_attributes>
     <id>UMLGeneric</id>
     <coordinates>
       <x>468</x>
-      <y>198</y>
+      <y>207</y>
       <w>18</w>
       <h>54</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>468</x>
+      <y>351</y>
+      <w>18</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>468</x>
+      <y>423</y>
+      <w>18</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>468</x>
+      <y>477</y>
+      <w>18</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
