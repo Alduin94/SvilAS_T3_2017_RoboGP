@@ -1,0 +1,8 @@
+dcd class diagram (rappresentano le classi da realizzare in java)
+
+dsd detailed seq diagram: come interagiscono tra loro gli oggetti del sistema (non dettagli algoritmici, ma cosa succede se una classe chiede qualcosa ad un altra classe, come le classi si suddividono le responsabilità del sistema)
+
+contratti delle operazioni + sequence
+
+
+classe controller: deve essere singleton, riceve da interfaccia la richiesta di svolgere l'operazione: a sinistra=grafica, a destra=dominio del sistema

@@ -4,7 +4,7 @@
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>390</x>
+      <x>480</x>
       <y>0</y>
       <w>80</w>
       <h>110</h>
@@ -15,10 +15,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>610</x>
-      <y>40</y>
-      <w>60</w>
-      <h>20</h>
+      <x>690</x>
+      <y>60</y>
+      <w>80</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>Sistema
 bg=red
@@ -28,30 +28,30 @@ bg=red
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>420</x>
-      <y>70</y>
+      <x>510</x>
+      <y>90</y>
       <w>30</w>
-      <h>900</h>
+      <h>680</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;880.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;660.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>630</x>
-      <y>50</y>
+      <x>720</x>
+      <y>80</y>
       <w>30</w>
-      <h>920</h>
+      <h>690</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;900.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;670.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>630</x>
-      <y>120</y>
+      <x>720</x>
+      <y>510</y>
       <w>20</w>
       <h>60</h>
     </coordinates>
@@ -61,55 +61,8 @@ bg=red
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>420</x>
-      <y>130</y>
-      <w>230</w>
-      <h>50</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;.
-schede
-degli altri giocatori</panel_attributes>
-    <additional_attributes>10.0;20.0;210.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>900</x>
-      <y>330</y>
-      <w>20</w>
-      <h>60</h>
-    </coordinates>
-    <panel_attributes/>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>910</x>
-      <y>230</y>
-      <w>240</w>
-      <h>40</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;-
-schede istruzione</panel_attributes>
-    <additional_attributes>10.0;20.0;220.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>630</x>
-      <y>490</y>
-      <w>20</w>
-      <h>60</h>
-    </coordinates>
-    <panel_attributes/>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>420</x>
-      <y>500</y>
+      <x>510</x>
+      <y>520</y>
       <w>230</w>
       <h>40</h>
     </coordinates>
@@ -120,8 +73,8 @@ attivaUpgrade(upgrades)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>340</x>
-      <y>430</y>
+      <x>430</x>
+      <y>450</y>
       <w>400</w>
       <h>150</h>
     </coordinates>
@@ -132,24 +85,21 @@ opt
     <additional_attributes/>
   </element>
   <element>
-    <id>UMLFrame</id>
+    <id>UMLGeneric</id>
     <coordinates>
-      <x>330</x>
-      <y>720</y>
-      <w>400</w>
-      <h>160</h>
+      <x>720</x>
+      <y>640</y>
+      <w>20</w>
+      <h>60</h>
     </coordinates>
-    <panel_attributes>halign=left
-opt
---
-*[se un robot ha toccato tutti i checkpoint]*</panel_attributes>
+    <panel_attributes/>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>630</x>
-      <y>790</y>
+      <x>720</x>
+      <y>360</y>
       <w>20</w>
       <h>60</h>
     </coordinates>
@@ -159,42 +109,8 @@ opt
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>420</x>
-      <y>800</y>
-      <w>230</w>
-      <h>40</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;.
-fine gara</panel_attributes>
-    <additional_attributes>10.0;20.0;210.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>630</x>
-      <y>620</y>
-      <w>20</w>
-      <h>60</h>
-    </coordinates>
-    <panel_attributes/>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>630</x>
-      <y>340</y>
-      <w>20</w>
-      <h>60</h>
-    </coordinates>
-    <panel_attributes/>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>420</x>
-      <y>630</y>
+      <x>510</x>
+      <y>650</y>
       <w>230</w>
       <h>40</h>
     </coordinates>
@@ -205,42 +121,56 @@ esito sottofase</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>290</x>
-      <y>210</y>
+      <x>380</x>
+      <y>230</y>
       <w>490</w>
-      <h>730</h>
+      <h>520</h>
     </coordinates>
     <panel_attributes>halign=left
 loop
 --
-*[finche' ci sono sottofasi]*</panel_attributes>
+*[per ogni sottofase]*</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>340</x>
-      <y>270</y>
+      <x>430</x>
+      <y>290</y>
       <w>400</w>
       <h>140</h>
     </coordinates>
     <panel_attributes>halign=left
 opt
 --
-*[se e'stato attivato un upgrade in una sottofase*
-*precedente AND l'upgrade e'attivabile]*</panel_attributes>
+*[se e' stato attivato un upgrade in una sottofase*
+*precedente AND l'upgrade e' attivabile]*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>320</x>
+      <y>170</y>
+      <w>610</w>
+      <h>610</h>
+    </coordinates>
+    <panel_attributes>halign=left
+loop
+--
+*[per ogni registro di tutti i robot]*</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>420</x>
-      <y>350</y>
+      <x>510</x>
+      <y>360</y>
       <w>230</w>
       <h>40</h>
     </coordinates>
-    <panel_attributes>lt=&lt;-
-consumaUpgradeAttivato()</panel_attributes>
-    <additional_attributes>210.0;20.0;10.0;20.0</additional_attributes>
+    <panel_attributes>lt=&lt;.
+consuma upgrade attivato</panel_attributes>
+    <additional_attributes>10.0;20.0;210.0;20.0</additional_attributes>
   </element>
 </diagram>
