@@ -1,10 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?><diagram program="umlet" version="13.3">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.1.1">
   <zoom_level>10</zoom_level>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>340</x>
-      <y>150</y>
+      <x>530</x>
+      <y>170</y>
       <w>110</w>
       <h>40</h>
     </coordinates>
@@ -15,8 +16,8 @@ nella partita</panel_attributes>
   <element>
     <id>UMLSpecialState</id>
     <coordinates>
-      <x>380</x>
-      <y>0</y>
+      <x>570</x>
+      <y>20</y>
       <w>20</w>
       <h>20</h>
     </coordinates>
@@ -26,8 +27,8 @@ nella partita</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>380</x>
-      <y>0</y>
+      <x>570</x>
+      <y>20</y>
       <w>30</w>
       <h>170</h>
     </coordinates>
@@ -37,8 +38,8 @@ nella partita</panel_attributes>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>340</x>
-      <y>280</y>
+      <x>530</x>
+      <y>300</y>
       <w>110</w>
       <h>40</h>
     </coordinates>
@@ -49,8 +50,8 @@ robot</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>380</x>
-      <y>250</y>
+      <x>570</x>
+      <y>270</y>
       <w>30</w>
       <h>50</h>
     </coordinates>
@@ -60,20 +61,20 @@ robot</panel_attributes>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>340</x>
-      <y>450</y>
-      <w>110</w>
+      <x>520</x>
+      <y>470</y>
+      <w>120</w>
       <h>40</h>
     </coordinates>
-    <panel_attributes>3. Fine 
+    <panel_attributes>3. Attende Fine 
 Manche</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>380</x>
-      <y>380</y>
+      <x>570</x>
+      <y>400</y>
       <w>30</w>
       <h>90</h>
     </coordinates>
@@ -83,8 +84,8 @@ Manche</panel_attributes>
   <element>
     <id>UMLSpecialState</id>
     <coordinates>
-      <x>370</x>
-      <y>350</y>
+      <x>560</x>
+      <y>370</y>
       <w>40</w>
       <h>40</h>
     </coordinates>
@@ -94,8 +95,8 @@ Manche</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>380</x>
-      <y>310</y>
+      <x>570</x>
+      <y>330</y>
       <w>30</w>
       <h>60</h>
     </coordinates>
@@ -105,8 +106,8 @@ Manche</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>400</x>
-      <y>360</y>
+      <x>590</x>
+      <y>380</y>
       <w>140</w>
       <h>30</h>
     </coordinates>
@@ -116,8 +117,8 @@ Manche</panel_attributes>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>520</x>
-      <y>350</y>
+      <x>710</x>
+      <y>370</y>
       <w>110</w>
       <h>40</h>
     </coordinates>
@@ -128,8 +129,8 @@ Upgrade</panel_attributes>
   <element>
     <id>UMLSpecialState</id>
     <coordinates>
-      <x>370</x>
-      <y>550</y>
+      <x>560</x>
+      <y>570</y>
       <w>40</w>
       <h>40</h>
     </coordinates>
@@ -139,8 +140,8 @@ Upgrade</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>380</x>
-      <y>480</y>
+      <x>570</x>
+      <y>500</y>
       <w>30</w>
       <h>90</h>
     </coordinates>
@@ -150,8 +151,8 @@ Upgrade</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>400</x>
-      <y>380</y>
+      <x>590</x>
+      <y>400</y>
       <w>190</w>
       <h>210</h>
     </coordinates>
@@ -161,8 +162,8 @@ Upgrade</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>230</x>
-      <y>230</y>
+      <x>420</x>
+      <y>250</y>
       <w>160</w>
       <h>360</h>
     </coordinates>
@@ -172,8 +173,8 @@ Upgrade</panel_attributes>
   <element>
     <id>UMLSpecialState</id>
     <coordinates>
-      <x>370</x>
-      <y>220</y>
+      <x>560</x>
+      <y>240</y>
       <w>40</w>
       <h>40</h>
     </coordinates>
@@ -183,8 +184,8 @@ Upgrade</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>380</x>
-      <y>180</y>
+      <x>570</x>
+      <y>200</y>
       <w>30</w>
       <h>60</h>
     </coordinates>
@@ -194,8 +195,8 @@ Upgrade</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>380</x>
-      <y>580</y>
+      <x>570</x>
+      <y>600</y>
       <w>30</w>
       <h>70</h>
     </coordinates>
@@ -205,8 +206,8 @@ Upgrade</panel_attributes>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>340</x>
-      <y>630</y>
+      <x>530</x>
+      <y>650</y>
       <w>110</w>
       <h>40</h>
     </coordinates>
@@ -217,8 +218,8 @@ Partita</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>380</x>
-      <y>660</y>
+      <x>570</x>
+      <y>680</y>
       <w>30</w>
       <h>60</h>
     </coordinates>
@@ -228,8 +229,8 @@ Partita</panel_attributes>
   <element>
     <id>UMLSpecialState</id>
     <coordinates>
-      <x>380</x>
-      <y>700</y>
+      <x>570</x>
+      <y>720</y>
       <w>20</w>
       <h>20</h>
     </coordinates>
