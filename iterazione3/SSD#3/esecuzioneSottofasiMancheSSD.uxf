@@ -67,7 +67,7 @@ bg=red
       <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-attivaUpgrade(upgrades)</panel_attributes>
+attivaUpgrade(upgrade)</panel_attributes>
     <additional_attributes>210.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
@@ -81,7 +81,7 @@ attivaUpgrade(upgrades)</panel_attributes>
     <panel_attributes>halign=left
 opt
 --
-*[se si vogliono utilizzare upgrades]*</panel_attributes>
+*[se si vuole utilizzare un upgrade]*</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -165,7 +165,7 @@ loop
     <id>Relation</id>
     <coordinates>
       <x>510</x>
-      <y>360</y>
+      <y>370</y>
       <w>230</w>
       <h>40</h>
     </coordinates>
