@@ -46,12 +46,12 @@ Ad ogni manche, il giocatore può programmare il proprio robot inserendo nei suo
 Le schede-istruzione vengono assegnate casualmente ai giocatori estraendole da un  pool globale  di 84 schede-istruzione . 
 I tipi disponibili di schede-istruzione sono i seguenti:
 
-- Back-up : il robot fa un passo indietro senza voltarsi. Ci sono in tutto 6 schede  Back up .
-- Move X (X=1,2,3):  il robot fa X passi avanti. Ci sono in tutto 18 schede  Move 1 , 12 schede
+- **Back-up** : il robot fa un passo indietro senza voltarsi. Ci sono in tutto 6 schede  Back up .
+- **Move X (X=1,2,3)**:  il robot fa X passi avanti. Ci sono in tutto 18 schede  Move 1 , 12 schede
 Move 2  e 6 schede  Move 3 .
-- Turn left/right:  il robot si gira di 90 gradi a sinistra/destra. Ci sono in tutto 18 schede
+- **Turn left/right**:  il robot si gira di 90 gradi a sinistra/destra. Ci sono in tutto 18 schede
 per ciascuno dei due tipi di  Turn .
-- U-turn:  il robot si gira su se stesso di 180 gradi. Ci sono in tutto 6 schede  U-turn.
+- **U-turn**:  il robot si gira su se stesso di 180 gradi. Ci sono in tutto 6 schede  U-turn.
 
 Ogni scheda ha anche una priorità (riportata in alto, sopra l’istruzione); quando più robot eseguono istruzioni che interagiscono l’una con l’altra, quella a priorità più alta viene eseguita per prima. Le schede hanno tutte diversa priorità e le priorità sono tutte multipli di 10.
 La seguente tabella ricapitola i tipi di schede-istruzione e le loro priorità:
