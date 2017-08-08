@@ -2,7 +2,7 @@
 
 Software engeneering Project - RoboGP
 
-#Progetto: RoboGP
+# Progetto: RoboGP
 
 RoboGP intende essere una versione elettronica del gioco da tavolo RoboRally.
 Nel seguito descriveremo innanzitutto il gioco (in una versione già adattata per poter essere implementata). 
@@ -11,47 +11,47 @@ In breve, il gioco consiste in una corsa di robot. Il  robodromo  – la “pist
 Il primo a raggiungere l’ultimo checkpoint sarà il vincitore.
 I giocatori hanno a disposizione istruzioni con cui programmare le prossime mosse di ciascun robot, ma quando i programmi vengono avviati le istruzioni di un robot potrebbero interferire con quelle degli altri, sortendo effetti inaspettati e... indesiderati.
 
-#Il Gioco
+# Il Gioco
 
 RoboGP è un gioco per 2-8 giocatori. Ciascun giocatore può controllare 1 o più pedine (robot) che si muovono su un tabellone (robodromo) suddiviso in caselle. Il tabellone rappresenta un percorso ad ostacoli
 Lo scopo del gioco è toccare per primi con uno dei propri robot le bandierine (checkpoint) numerate presenti sul robodromo, nell’ordine da esse indicato.
 
-#I Robot
+# I Robot
 
 Ciascun giocatore (il gioco prevede da 2 a 8 giocatori in generale) controlla uno o più robot. In figura si possono vedere i “ritratti” dei segnalini-robot originariamente previsti
 dal gioco.
 In RoboRally ciascun robot ha  cinque registri programmabili  (I-V) ,  e inizia la gara con  dieci punti salute  e  tre vite .
 Ciascun robot è anche dotato di un  laser che spara dritto dinanzi a lui e si interrompe solo quando incontra un ostacolo (tipicamente, una parete, o un altro robot...)
 
-#Il Robodromo
+# Il Robodromo
 
 Il robodromo è un tabellone di gioco a base quadrata o rettangolare diviso in caselle, che rappresenta un “campo di gioco” con ostacoli e pericoli. Sul robodromo sono rappresentate anche le posizioni di partenza (dock) dei concorrenti-robot e i checkpoint numerati che i robot devono toccare (nell’ordine della numerazione) per procedere nella gara.
 Questo tabellone di esempio può avere da 2 a 8 concorrenti, e prevede 3 checkpoint. Si vedono anche altri elementi del percorso:
 
-● i  buchi neri , che costringono il robot a ripartire dall’ultimo checkpoint attraversato, o dal
+- i  buchi neri , che costringono il robot a ripartire dall’ultimo checkpoint attraversato, o dal
 via;
-● i nastridiscorrimento (singoloedoppio)chespostanoautomaticamenteilrobot
-● le stazionidiriparazione ,cheriparanoilrobotdaeventualidannisubiti
-● i muri ,chelimitanoilpassaggiofralecaselle
-● le rotatorie ,chefannogirareilrobotsusestesso
-● i raggilaser ,chedanneggianoilrobot
+- i nastridiscorrimento (singoloedoppio)chespostanoautomaticamenteilrobot
+- le stazionidiriparazione ,cheriparanoilrobotdaeventualidannisubiti
+- i muri ,chelimitanoilpassaggiofralecaselle
+- le rotatorie ,chefannogirareilrobotsusestesso
+- i raggilaser ,chedanneggianoilrobot
 
 Il gioco include diversi robodromi predefiniti.
 
 
-#La programmazione dei robot
+# La programmazione dei robot
 
 In RoboGP i giocatori assumono il ruolo dei programmatori dei robot.
 Ad ogni manche, il giocatore può programmare il proprio robot inserendo nei suoi cinque registri delle schede-istruzione, scelte dal proprio  pool personale , che è normalmente composto di nove schede. Il programmatore può quindi definire le prossime cinque mosse del suo robot. 
 Le schede-istruzione vengono assegnate casualmente ai giocatori estraendole da un  pool globale  di 84 schede-istruzione . 
 I tipi disponibili di schede-istruzione sono i seguenti:
 
-● Back-up : il robot fa un passo indietro senza voltarsi. Ci sono in tutto 6 schede  Back up .
-● Move X (X=1,2,3):  il robot fa X passi avanti. Ci sono in tutto 18 schede  Move 1 , 12 schede
+- Back-up : il robot fa un passo indietro senza voltarsi. Ci sono in tutto 6 schede  Back up .
+- Move X (X=1,2,3):  il robot fa X passi avanti. Ci sono in tutto 18 schede  Move 1 , 12 schede
 Move 2  e 6 schede  Move 3 .
-● Turn left/right:  il robot si gira di 90 gradi a sinistra/destra. Ci sono in tutto 18 schede
+- Turn left/right:  il robot si gira di 90 gradi a sinistra/destra. Ci sono in tutto 18 schede
 per ciascuno dei due tipi di  Turn .
-● U-turn:  il robot si gira su se stesso di 180 gradi. Ci sono in tutto 6 schede  U-turn.
+- U-turn:  il robot si gira su se stesso di 180 gradi. Ci sono in tutto 6 schede  U-turn.
 
 Ogni scheda ha anche una priorità (riportata in alto, sopra l’istruzione); quando più robot eseguono istruzioni che interagiscono l’una con l’altra, quella a priorità più alta viene eseguita per prima. Le schede hanno tutte diversa priorità e le priorità sono tutte multipli di 10.
 La seguente tabella ricapitola i tipi di schede-istruzione e le loro priorità:
@@ -90,7 +90,7 @@ La dimensione del pool tuttavia può calare quando il robot perde punti salute (
 Per riparare il robot si può terminare la manche di gioco su una casella Riparazione (o Upgrade&Riparazione) (simbolo della chiave inglese, eventualmente accompagnata da un martello) o Checkpoint (bandierina numerata) – che fanno riacquisire un punto salute – o decidere di spegnere il robot per una manche, per ripararlo completamente.
 Vedi la sezione  Funzionamento del robodromo  per maggiori dettagli sulle caselle Riparazione, Upgrade&Riparazione e Checkpoint, e la sezione  Robot danneggiati o distrutti per maggiori dettagli su punti salute, vite, e sul blocco dei registri.
 
-#Il gioco in breve
+# Il gioco in breve
 
 Il gioco inizia estraendo a sorte su quale rampa di lancio partirà ciascun robot (se ci sono meno di 8 giocatori, si usano solo le rampe 1-N, dove N è il numero di giocatori).
 Per rendere il giocopiù movimentato, si può anche decidere di dotare ciascun robot di un  upgrade scelto a caso sin dall’inizio del gioco (vedi sezione  Upgrade ). In caso contrario, per ottenere un upgrade sarà necessario fermarsi su una casella Upgrade&Riparazione
@@ -110,7 +110,7 @@ effettuano:
     E. Touch & Save:  i checkpoint e i punti riparazione vengono “toccati”.
 4. Fine manche:  Si  gestiscono gli effetti di fine manche e si resettano i robot per la manche successiva.
 
-#Esecuzione di una manche di gioco
+# Esecuzione di una manche di gioco
 
 1. Ricezione delle schede-istruzione
 I giocatori ricevono tante schede-istruzione quante ne servono per riempire il loro pool (ricordiamo che la dimensione del pool è pari a numero di punti salute rimasti al robot – 1).
@@ -142,7 +142,7 @@ E. Touch & Save
 I Checkpoint e i punti Riparazione (o Upgrade&Riparazione) vengono “toccati”, ossia la posizione del robot viene salvata in quel punto e il progresso nella gara viene registrato. Se il robot ha toccato tutti i checkpoint nell’ordine, ha terminato la gara. Se il robot dovesse perdere una vita, ricomincerà dall’ultima posizione salvata.
 Attenzione: perché la funzione di riparazione e/o upgrade di queste caselle si attivi, è necessario che il robot si trovi ancora sulla casella al termine della manche. Non è sufficiente che ci passi sopra.
 
-#Attivazione upgrade
+# Attivazione upgrade
 
 Durante la fase di esecuzione, il giocatore può dichiarare in qualunque momento (=attivare) se vuole utilizzare un  upgrade ;  l’upgrade verrà in ogni caso  consumato e applicato nella prima sottofase valida  successiva a quella di attivazione. Se l’esecuzione termina prima che possa essere utilizzato, esso verrà “sprecato”.
 Esempio:  un giocatore ha ricevuto 5 bombe come upgrade. Le bombe vengono utilizzate durante la sottofase “Laser & Armi” (D). Supponiamo che il giocatore voglia far esplodere una bomba durante l’esecuzione del registro I: dovrà attivarla  prima che inizi la sottofase D, quindi durante una delle sottofasi A-C.
@@ -151,15 +151,15 @@ I dettagli sul funzionamento di ciascun upgrade sono indicati nelle istruzioni s
 
 4. Fine Manche
 Una volta terminata l’esecuzione del registro V:
-● si applicano gli effetti di riparazione delle caselle Checkpoint, Riparazione e
+- si applicano gli effetti di riparazione delle caselle Checkpoint, Riparazione e
 Upgrade&Riparazione, ossia il robot riacquista un punto salute
-● si applicano gli effetti di upgrade delle caselle Upgrade&Riparazione: il robot riceve un
+- si applicano gli effetti di upgrade delle caselle Upgrade&Riparazione: il robot riceve un
 upgrade e il giocatore può visualizzarne le istruzioni. Gli altri giocatori vengono notificati
 dell’upgrade installato.
-● si resettano i registri che non sono bloccati, scartando le schede-istruzione che
+- si resettano i registri che non sono bloccati, scartando le schede-istruzione che
 contenevano.
 
-#Robot danneggiati o distrutti
+# Robot danneggiati o distrutti
 
 Un robot può essere danneggiato nel corso della gara (da un laser) e in tal caso perde punti salute.
 Quando un robot perde un punto salute, il pool di schede a disposizione del programmatore, che normalmente è di 9 schede, si riduce di uno: il pool di schede ha dunque una dimensione pari a punti salute – 1.
@@ -185,7 +185,7 @@ Un robot può venire distrutto anche se  cade in un buco nero o  finisce fuori d
 Un robot distrutto perde una vita e ricomincia dall’ultima posizione salvata, o dalla posizione di partenza se non ha mai incontrato un punto di salvataggio (ricordiamo che i punti di salvataggio sono le caselle Checkpoint, Riparazione e Upgrade&Riparazione, e che i salvataggi avvengono nella sottofase  Touch (E)  della fase di  Esecuzione (3) ).
 Se il robot esaurisce le vite, esce dal gioco.
 
-#Funzionamento del robodromo
+# Funzionamento del robodromo
 
 Riportiamo qui i tipi di elementi che si possono trovare nel robodromo.
 
@@ -215,11 +215,11 @@ Dunque parte dell’effetto di questi nastri viene operato quando il robot  arri
 
 Nastri trasportatori misti : si comportano come i precedenti, ma ci sono più direzioni di ingresso che attivano l’eventuale rotazione. (Quelli in figura sono solo alcuni esempi delle combinazioni possibili).
 
-#Upgrade
+# Upgrade
 
 Gli upgrade sono componenti usa e getta che permettono a un robot di effettuare azioni particolari durante la fase di esecuzione.
 
-#Utilizzo nel gioco
+# Utilizzo nel gioco
 
 Quando un robot  termina una manche su una casella Upgrade&Riparazione, riceve un package upgrade a caso fra quelli disponibili. Il package contiene 3 o 5 istanze usa e getta di un determinato upgrade.
 Opzionalmente, si può scegliere di iniziare la gara dotando già ciascun robot di un package upgrade, sempre scelto a caso.
@@ -227,7 +227,7 @@ Opzionalmente, si può scegliere di iniziare la gara dotando già ciascun robot 
 Gli upgrade devono essere  esplicitamente attivati dal giocatore che controlla il robot  durante la fase di Esecuzione (3) ; perché siano efficaci l’attivazione deve avvenire  prima dell’inizio della sottofase di utilizzo  (secondo le istruzioni specifiche dell’upgrade).
 L’upgrade viene consumato quando viene attivato, anche qualora non dovesse avere nessun effetto a causa di un’attivazione erronea.
 
-#Upgrade disponibili
+# Upgrade disponibili
 
 Random Switch (x5)
 A
@@ -319,7 +319,7 @@ D
 Il robot spara un colpo dinanzi a sé e un colpo dietro di sé.
 1
 
-#L’applicazione RoboGP
+# L’applicazione RoboGP
 
 L’applicazione RoboGP dovrà essere un’applicazione desktop multi-piattaforma.
 Essa dovrà prevedere due modalità di utilizzo:
@@ -327,7 +327,7 @@ Modalità Sfida , dove più giocatori si sfidano in rete (un giocatore attiverà
 Modalità Allenamento , dove un giocatore da solo può allenarsi a programmare il proprio robot su un robodromo a sua scelta.
 In release future si prevede di inserire anche una  Modalità creazione robodromo per permettere ai giocatori di creare robodromi personalizzati, ma per il momento i giocatori potranno utilizzare solo i robodromi predefiniti messi a disposizione con l’applicazione.
 
-#Modalità sfida
+# Modalità sfida
 
 La modalità sfida richiede che uno dei giocatori attivi un server di partita a cui poi gli altri possano collegarsi per giocare. Il proprietario del server dovrà poter scegliere se accettare o meno le richieste di connessione (ossia, di partecipazione alla partita).
 Il giocatore che attiva il server ha anche la responsabilità di scegliere le caratteristiche della partita, in particolare il numero di giocatori ammessi, il numero di robot controllati da ciascun giocatore, il robodromo su cui giocare, l’eventuale dotazione iniziale di upgrade dei robot, la modalità di conclusione della partita.
@@ -336,7 +336,7 @@ Sul robodromo sono ammessi al massimo 8 robot, quindi il “gestore della partit
 Una volta presenti tutti i giocatori la partita potrà avere inizio e procederà secondo le regole del gioco sopra descritte.
 La partita dovrebbe poter essere salvata (fra una manche e l’altra) e ripresa in un momento successivo.
 
-#Modalità allenamento
+# Modalità allenamento
 
 In questa modalità il giocatore è solo e può allenarsi su un robodromo a sua scelta.
 Allenarsi significa poter scrivere un programma, costruito mettendo in sequenza le istruzioni base presenti sulle schede-istruzione, ma senza limitazioni sulla scelta delle schede o sulla lunghezza del programma stesso, per poi eseguirlo. 
@@ -346,22 +346,22 @@ gli elementi del robodromo (esclusi i laser, in allenamento i robot non si posso
 Durante l’esecuzione il giocatore può mettere in pausa il programma, tornare a un punto precedente nella sua esecuzione, o fermarlo definitivamente per poterlo modificare.
 Il giocatore deve anche poter scegliere liberamente da quale posizione far partire il robot e in quale direzione deve essere inizialmente voltato.
 
-#Requisiti tecnici
+# Requisiti tecnici
 
 Si richiede di implementare l’applicazione in linguaggio Java.
 Si lascia libertà di scelta ai progettisti riguardo alla modalità e al formato di salvataggio dei dati della partita in corso.
 Per quanto riguarda la modalità sfida, ai fini della regolarità del gioco, è importante che la logica del gioco stesso sia gestita dal server. 
 In altre parole dovrà essere il server a vagliare la correttezza delle mosse dei giocatori e a determinarne l’esito. Il ruolo dei client è quello di permettere ai giocatori di scegliere le proprie mosse/azioni di gioco, e di mostrare l’andamento del gioco.
 
-#Requisiti di interazione
+# Requisiti di interazione
 
 Il gioco è reso interessante dal fatto che non è sempre semplice valutare in modo sufficientemente rapido quali siano le istruzioni più corrette per portare il proprio robot dove si desidera, né come reagire – ammesso che sia possibile – alle interazioni impreviste fra i robot. Per questa ragione vanno tenute in conto le seguenti considerazioni:
-● La fase di programmazione non deve dare ai giocatori tutto il tempo che vogliono, ma come da regole di gioco, deve iniziare un conto alla rovescia non appena il penultimo giocatore ha terminato di programmare. Nella fase di programmazione è inoltre importante che il giocatore veda quali altri giocatori hanno terminato e quali no.
-● La fase di esecuzione deve avvenire sottofase per sottofase, da un lato dando il tempo ai giocatori di capire cosa sta succedendo e giocarsi gli upgrade, dall’altro senza diventare tediosa. Nelle sottofasi che prevedono una animazione in grafica (B,C,D) sarà probabilmente sufficiente lasciare qualche secondo, con un conto alla rovescia, in aggiunta al tempo di visualizzazione delle animazioni.
+- La fase di programmazione non deve dare ai giocatori tutto il tempo che vogliono, ma come da regole di gioco, deve iniziare un conto alla rovescia non appena il penultimo giocatore ha terminato di programmare. Nella fase di programmazione è inoltre importante che il giocatore veda quali altri giocatori hanno terminato e quali no.
+- La fase di esecuzione deve avvenire sottofase per sottofase, da un lato dando il tempo ai giocatori di capire cosa sta succedendo e giocarsi gli upgrade, dall’altro senza diventare tediosa. Nelle sottofasi che prevedono una animazione in grafica (B,C,D) sarà probabilmente sufficiente lasciare qualche secondo, con un conto alla rovescia, in aggiunta al tempo di visualizzazione delle animazioni.
 Nelle sottofasi A e E, che sono visualizzate istantaneamente, si dovrà prevedere un tempo di reazione per i giocatori leggermente più lungo.
-● Dovrà essere sempre mostrato chiaramente ai giocatori quali sono gli esiti di ciascuna sottofase (quindi: eventuali danni subiti, salvataggio posizione, riparazioni, upgrade acquisiti, checkpoint conquistati)  oltre a quanto verrà naturalmente mostrato tramite la grafica del tabellone di gioco.
+- Dovrà essere sempre mostrato chiaramente ai giocatori quali sono gli esiti di ciascuna sottofase (quindi: eventuali danni subiti, salvataggio posizione, riparazioni, upgrade acquisiti, checkpoint conquistati)  oltre a quanto verrà naturalmente mostrato tramite la grafica del tabellone di gioco.
 
-#GUI
+# GUI
 
 I nostri grafici metteranno a disposizione un package per la visualizzazione del tabellone di gioco e l’animazione delle pedine, tramite il quale sarà possibile realizzare gli effetti necessari a mostrare l’andamento del gioco.
 Le seguenti figure mostrano sketch di possibili GUI di gioco/allenamento studiate dai nostri grafici; sarà comunque possibile proporre varianti se dovessero emergere necessità diverse o idee migliori. Non sono state abbozzate le GUI per le fasi di configurazione (del server, della partita o dell’allenamento); si prevede non presentino particolari difficoltà.
