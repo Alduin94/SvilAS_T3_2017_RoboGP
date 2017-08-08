@@ -56,31 +56,31 @@ per ciascuno dei due tipi di  Turn .
 Ogni scheda ha anche una priorità (riportata in alto, sopra l’istruzione); quando più robot eseguono istruzioni che interagiscono l’una con l’altra, quella a priorità più alta viene eseguita per prima. Le schede hanno tutte diversa priorità e le priorità sono tutte multipli di 10.
 La seguente tabella ricapitola i tipi di schede-istruzione e le loro priorità:
 
-U-turn
+**U-turn**
 6
 da 10 a 60
 
-Turn left
+**Turn left**
 18
 da 70 a 410 (step 20)
 
-Turn right
+**Turn right**
 18
 da 80 a 420 (step 20)
 
-Back-up
+**Back-up**
 6
 da 430 a 480
 
-Move 1
+**Move 1**
 18
 da 490 a 660
 
-Move 2
+**Move 2**
 12
 da 670 a 780
 
-Move 3
+**Move 3****
 6
 da 790 a 840
 
@@ -189,31 +189,31 @@ Se il robot esaurisce le vite, esce dal gioco.
 
 Riportiamo qui i tipi di elementi che si possono trovare nel robodromo.
 
-Pareti : impediscono il passaggio del robot
+**Pareti **: impediscono il passaggio del robot
 
-Laser : danneggia il primo robot che si trova sulla sua linea di fuoco
+**Laser** : danneggia il primo robot che si trova sulla sua linea di fuoco
 
-Respingenti : spingono il robot di una posizione. I respingenti pari si attivano solo durante l’esecuzione dei registri II e IV, i respingenti dispari solo durante l’esecuzione dei registri I, III e V.
+**Respingenti** : spingono il robot di una posizione. I respingenti pari si attivano solo durante l’esecuzione dei registri II e IV, i respingenti dispari solo durante l’esecuzione dei registri I, III e V.
 
-Dock  o  Rampa di partenza : indica la posizione di partenza dei robot nel circuito. I dock sono numerati da 1 a 8.
+**Dock  o  Rampa di partenza** : indica la posizione di partenza dei robot nel circuito. I dock sono numerati da 1 a 8.
 
-Checkpoint:  per vincere la gara i robot devono “toccare” i checkpoint nell’ordine di numerazione. Su un robodromo possono esserci fino a 4 checkpoint. I checkpoint sono anche punti di riparazione.
+**Checkpoint**:  per vincere la gara i robot devono “toccare” i checkpoint nell’ordine di numerazione. Su un robodromo possono esserci fino a 4 checkpoint. I checkpoint sono anche punti di riparazione.
 
-Riparazione:  un robot che tocca un punto di riparazione vede la sua posizione salvata. Se un robot termina la  manche  su un punto riparazione, riacquisisce un punto salute.
+**Riparazione**:  un robot che tocca un punto di riparazione vede la sua posizione salvata. Se un robot termina la  manche  su un punto riparazione, riacquisisce un punto salute.
 
-Upgrade&Riparazione:  si comporta come un punto Riparazione. In più, se un robot termina la  manche  su un punto upgrade, acquisisce un upgrade estratto a sorte.
+**Upgrade&Riparazion**:  si comporta come un punto Riparazione. In più, se un robot termina la  manche  su un punto upgrade, acquisisce un upgrade estratto a sorte.
 
-Buco nero:  se il robot ci cade dentro viene immediatamente distrutto.
+**Buco nero**:  se il robot ci cade dentro viene immediatamente distrutto.
 
-Rotatoria:  il robot viene ruotato di 90° nella direzione delle frecce (verde = senso orario, arancione = senso antiorario).
+**Rotatoria**:  il robot viene ruotato di 90° nella direzione delle frecce (verde = senso orario, arancione = senso antiorario).
 
-Nastri trasportatori:  traslano il robot nella direzione delle frecce. I nastri trasportatori semplici (color arancione) si attivano una volta sola nel corso dell’esecuzione di un registro, mentre i nastri express (color azzurro) si attivano per due volte. 
+**Nastri trasportatori**:  traslano il robot nella direzione delle frecce. I nastri trasportatori semplici (color arancione) si attivano una volta sola nel corso dell’esecuzione di un registro, mentre i nastri express (color azzurro) si attivano per due volte. 
 Il robot viene traslato se al momento dell’attivazione del nastro si trova su questa casella.  
 
-Nastri trasportatori con curva:   in aggiunta al comportamento dei nastri trasportatori normali ,  se il robot viene depositato su di essi da un altro nastro trasportatore proveniente dalla direzione di ingresso indicata dalla freccia,  lo ruotano immediatamente  nella direzione della freccia. 
+**Nastri trasportatori con curva**:   in aggiunta al comportamento dei nastri trasportatori normali ,  se il robot viene depositato su di essi da un altro nastro trasportatore proveniente dalla direzione di ingresso indicata dalla freccia,  lo ruotano immediatamente  nella direzione della freccia. 
 Dunque parte dell’effetto di questi nastri viene operato quando il robot  arriva sulla casella a causa dell’attivazione dei nastri, non quando ci è già sopra. (La figura mostra due rotazioni a sinistra, ci sono anche le rotazioni a destra).
 
-Nastri trasportatori misti : si comportano come i precedenti, ma ci sono più direzioni di ingresso che attivano l’eventuale rotazione. (Quelli in figura sono solo alcuni esempi delle combinazioni possibili).
+**Nastri trasportatori mist**i : si comportano come i precedenti, ma ci sono più direzioni di ingresso che attivano l’eventuale rotazione. (Quelli in figura sono solo alcuni esempi delle combinazioni possibili).
 
 # Upgrade
 
@@ -229,92 +229,92 @@ L’upgrade viene consumato quando viene attivato, anche qualora non dovesse ave
 
 # Upgrade disponibili
 
-Random Switch (x5)
+**Random Switch (x5)**
 A
 La scheda istruzione del prossimo registro viene sostituita con una presa a caso dal pool globale
 2
 
-Copia & Incolla (x3)
+**Copia & Incolla (x3)**
 A
 La scheda istruzione del prossimo registro viene sostituita con una copia di quella attuale.
 1
 
-Freni (x5)
+**Freni (x5)**
 B
 Non esegue l’istruzione nel registro
 2
 
-Acceleratore (x3)
+**Acceleratore (x3)**
 B
 Se nel registro c’è una Move X, esegue invece Move (X+1)
 1
 
-Retromarcia
+**Retromarcia**
 B
 Se nel registro c’è un Back-up, arretra di due
 1
 
-Shift (x5)
+**Shift (x5)**
 B
 Se nel registro c’è un Turn left/right, avrà invece l’effetto di una Shift left/right (ossia il robot si sposta lateralmente senza ruotare)
 2
 
-Dual Core (x3)
+**Dual Core (x3)**
 B
 L’istruzione nel registro viene eseguita due volte in immediata successione.
 1
 
-Disturbatore di frequenze
+**Disturbatore di frequenze**
 C
 I nastri trasportatori semplici non si attivano. I nastri trasportatori express si attivano una volta sola. Il resto del robodromo si comporta normalmente.
 2
 
-Giroscopio (x5)
+**Giroscopio (x5)**
 C
 Il robot non viene ruotato da rotatorie né nastri trasportatori
 2
 
-Scudo (x3)
+**Scudo (x3)**
 D
 Assorbe 1 danno ricevuto dal robot durante la sottofase Laser&Armi immediatamente successiva.
 2
 
-Bomba
+**Bomba**
 D
 Invece di sparare il laser, il robot lancia una bomba, che colpisce qualunque altro robot si trovi nel quadrato 5x5 di caselle intorno ad esso.
 2
 
-Superlaser (x3)
+**Superlaser (x3)**
 D
 Il laser del robot dopo aver colpito il primo ostacolo sul suo percorso (parete o altro robot) ne colpisce un secondo.
 1
 
-Doppio Laser (x3)
+**Doppio Laser (x3)**
 D
 Il laser del robot provoca due danni.
 1
 
-Raggio respingente (x5)
+**Raggio respingente (x5)**
 D
 Il raggio del robot non provoca danni ma spinge il robot colpito di una posizione (a meno che non ci sia una parete a impedirlo).
 1
 
-Raggio attrattore (x5)
+**Raggio attrattore (x5)**
 D
 Il raggio del robot non provoca danni ma attrae il robot colpito verso di sé di una posizione (a meno che non ci sia una parete a impedirlo).
 1
 
-Raggio controllante (x3)
+**Raggio controllante (x3)**
 D
 Il raggio del robot non provoca danni ma sostituisce completamente il programma del robot colpito con quello di chi ha sparato.
 1
 
-Raggio disturbante (x3)
+**Raggio disturbante (x3)**
 D
 Il raggio del robot non provoca danni ma rimescola fra loro le schede istruzione del robot colpito.
 1
 
-Retro Laser (x3)
+**Retro Laser (x3)**
 D
 Il robot spara un colpo dinanzi a sé e un colpo dietro di sé.
 1
