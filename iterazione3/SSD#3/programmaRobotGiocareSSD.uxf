@@ -4,7 +4,7 @@
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>364</x>
+      <x>390</x>
       <y>0</y>
       <w>104</w>
       <h>143</h>
@@ -15,7 +15,7 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>650</x>
+      <x>676</x>
       <y>78</y>
       <w>78</w>
       <h>26</h>
@@ -28,7 +28,7 @@ bg=red
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>403</x>
+      <x>429</x>
       <y>117</y>
       <w>39</w>
       <h>728</h>
@@ -39,7 +39,7 @@ bg=red
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>676</x>
+      <x>702</x>
       <y>91</y>
       <w>39</w>
       <h>754</h>
@@ -50,7 +50,7 @@ bg=red
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>299</x>
+      <x>325</x>
       <y>221</y>
       <w>520</w>
       <h>533</h>
@@ -79,7 +79,7 @@ alt
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>676</x>
+      <x>702</x>
       <y>390</y>
       <w>26</w>
       <h>78</h>
@@ -90,7 +90,7 @@ alt
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>403</x>
+      <x>429</x>
       <y>403</y>
       <w>299</w>
       <h>65</h>
@@ -103,7 +103,7 @@ programmaRegistro
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>403</x>
+      <x>429</x>
       <y>637</y>
       <w>299</w>
       <h>52</h>
@@ -115,7 +115,7 @@ spegniRobot(robot)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>676</x>
+      <x>702</x>
       <y>624</y>
       <w>26</w>
       <h>78</h>
@@ -126,7 +126,7 @@ spegniRobot(robot)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>221</x>
+      <x>247</x>
       <y>156</y>
       <w>689</w>
       <h>663</h>
@@ -140,7 +140,7 @@ loop
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>325</x>
+      <x>351</x>
       <y>299</y>
       <w>468</w>
       <h>221</h>
