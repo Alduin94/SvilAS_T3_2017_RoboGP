@@ -5,7 +5,7 @@
     <id>UMLFrame</id>
     <coordinates>
       <x>300</x>
-      <y>450</y>
+      <y>310</y>
       <w>470</w>
       <h>150</h>
     </coordinates>
@@ -19,12 +19,12 @@ opt
     <id>Relation</id>
     <coordinates>
       <x>420</x>
-      <y>510</y>
+      <y>370</y>
       <w>230</w>
       <h>40</h>
     </coordinates>
-    <panel_attributes>lt=&lt;-
-istruzioni upgrade</panel_attributes>
+    <panel_attributes>lt=&lt;.
+informazioni upgrade</panel_attributes>
     <additional_attributes>10.0;20.0;210.0;20.0</additional_attributes>
   </element>
   <element>
@@ -33,10 +33,10 @@ istruzioni upgrade</panel_attributes>
       <x>630</x>
       <y>120</y>
       <w>30</w>
-      <h>650</h>
+      <h>420</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;630.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;400.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -44,16 +44,16 @@ istruzioni upgrade</panel_attributes>
       <x>420</x>
       <y>140</y>
       <w>30</w>
-      <h>620</h>
+      <h>410</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;600.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;390.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
       <x>630</x>
-      <y>500</y>
+      <y>360</y>
       <w>20</w>
       <h>60</h>
     </coordinates>
@@ -85,29 +85,6 @@ bg=red
     <additional_attributes/>
   </element>
   <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>630</x>
-      <y>350</y>
-      <w>20</w>
-      <h>60</h>
-    </coordinates>
-    <panel_attributes/>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>420</x>
-      <y>360</y>
-      <w>230</w>
-      <h>40</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;.
-reset registri</panel_attributes>
-    <additional_attributes>10.0;20.0;210.0;20.0</additional_attributes>
-  </element>
-  <element>
     <id>Relation</id>
     <coordinates>
       <x>420</x>
@@ -116,8 +93,8 @@ reset registri</panel_attributes>
       <h>50</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
-applicazione
-effetti caselle</panel_attributes>
+esito fine
+manche</panel_attributes>
     <additional_attributes>10.0;20.0;210.0;20.0</additional_attributes>
   </element>
   <element>

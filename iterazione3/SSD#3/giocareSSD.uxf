@@ -4,8 +4,8 @@
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>451</x>
-      <y>55</y>
+      <x>385</x>
+      <y>0</y>
       <w>88</w>
       <h>121</h>
     </coordinates>
@@ -15,8 +15,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>693</x>
-      <y>88</y>
+      <x>627</x>
+      <y>33</y>
       <w>88</w>
       <h>33</h>
     </coordinates>
@@ -28,8 +28,8 @@ bg=red
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>484</x>
-      <y>132</y>
+      <x>418</x>
+      <y>77</y>
       <w>33</w>
       <h>726</h>
     </coordinates>
@@ -39,8 +39,8 @@ bg=red
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>726</x>
-      <y>110</y>
+      <x>660</x>
+      <y>55</y>
       <w>33</w>
       <h>748</h>
     </coordinates>
@@ -50,8 +50,8 @@ bg=red
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>484</x>
-      <y>187</y>
+      <x>418</x>
+      <y>132</y>
       <w>264</w>
       <h>44</h>
     </coordinates>
@@ -62,8 +62,8 @@ inziaPartita(username)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>726</x>
-      <y>198</y>
+      <x>660</x>
+      <y>143</y>
       <w>22</w>
       <h>66</h>
     </coordinates>
@@ -73,8 +73,8 @@ inziaPartita(username)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>484</x>
-      <y>220</y>
+      <x>418</x>
+      <y>165</y>
       <w>264</w>
       <h>44</h>
     </coordinates>
@@ -85,8 +85,8 @@ posizione, upgrades</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>319</x>
-      <y>297</y>
+      <x>253</x>
+      <y>242</y>
       <w>616</w>
       <h>539</h>
     </coordinates>
@@ -101,8 +101,8 @@ loop
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>352</x>
-      <y>396</y>
+      <x>286</x>
+      <y>341</y>
       <w>517</w>
       <h>77</h>
     </coordinates>
@@ -114,8 +114,8 @@ loop
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>352</x>
-      <y>506</y>
+      <x>286</x>
+      <y>451</y>
       <w>539</w>
       <h>121</h>
     </coordinates>
@@ -128,8 +128,8 @@ opt
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>726</x>
-      <y>704</y>
+      <x>660</x>
+      <y>649</y>
       <w>22</w>
       <h>66</h>
     </coordinates>
@@ -139,8 +139,8 @@ opt
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>484</x>
-      <y>715</y>
+      <x>418</x>
+      <y>660</y>
       <w>264</w>
       <h>44</h>
     </coordinates>
@@ -151,8 +151,8 @@ esciDaPartita()</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>352</x>
-      <y>649</y>
+      <x>286</x>
+      <y>594</y>
       <w>539</w>
       <h>143</h>
     </coordinates>
@@ -165,8 +165,8 @@ opt
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>726</x>
-      <y>550</y>
+      <x>660</x>
+      <y>495</y>
       <w>22</w>
       <h>66</h>
     </coordinates>
@@ -176,13 +176,13 @@ opt
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>484</x>
-      <y>561</y>
+      <x>418</x>
+      <y>506</y>
       <w>264</w>
       <h>44</h>
     </coordinates>
-    <panel_attributes>lt=&lt;-
-numero aggionato delle vite</panel_attributes>
+    <panel_attributes>lt=&lt;.
+vite rimanenti</panel_attributes>
     <additional_attributes>10.0;20.0;220.0;20.0</additional_attributes>
   </element>
 </diagram>

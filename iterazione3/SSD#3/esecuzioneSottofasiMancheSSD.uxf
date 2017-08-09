@@ -15,7 +15,7 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>690</x>
+      <x>700</x>
       <y>60</y>
       <w>80</w>
       <h>30</h>
@@ -39,7 +39,7 @@ bg=red
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>720</x>
+      <x>730</x>
       <y>80</y>
       <w>30</w>
       <h>690</h>
@@ -50,7 +50,7 @@ bg=red
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>720</x>
+      <x>730</x>
       <y>510</y>
       <w>20</w>
       <h>60</h>
@@ -63,12 +63,12 @@ bg=red
     <coordinates>
       <x>510</x>
       <y>520</y>
-      <w>230</w>
+      <w>240</w>
       <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 attivaUpgrade(upgrade)</panel_attributes>
-    <additional_attributes>210.0;20.0;10.0;20.0</additional_attributes>
+    <additional_attributes>220.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLFrame</id>
@@ -87,7 +87,7 @@ opt
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>720</x>
+      <x>730</x>
       <y>640</y>
       <w>20</w>
       <h>60</h>
@@ -98,7 +98,7 @@ opt
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>720</x>
+      <x>730</x>
       <y>360</y>
       <w>20</w>
       <h>60</h>
@@ -111,12 +111,12 @@ opt
     <coordinates>
       <x>510</x>
       <y>650</y>
-      <w>230</w>
+      <w>240</w>
       <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 esito sottofase</panel_attributes>
-    <additional_attributes>10.0;20.0;210.0;20.0</additional_attributes>
+    <additional_attributes>10.0;20.0;220.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLFrame</id>
@@ -166,11 +166,11 @@ loop
     <coordinates>
       <x>510</x>
       <y>370</y>
-      <w>230</w>
+      <w>240</w>
       <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
-consuma upgrade attivato</panel_attributes>
-    <additional_attributes>10.0;20.0;210.0;20.0</additional_attributes>
+attivazione upgrade</panel_attributes>
+    <additional_attributes>10.0;20.0;220.0;20.0</additional_attributes>
   </element>
 </diagram>
