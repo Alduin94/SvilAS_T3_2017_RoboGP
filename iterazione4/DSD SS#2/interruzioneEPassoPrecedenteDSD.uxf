@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<diagram program="umlet" version="14.1.1">
-  <zoom_level>10</zoom_level>
+<diagram program="umlet" version="14.2">
+  <zoom_level>8</zoom_level>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>860</x>
-      <y>80</y>
-      <w>110</w>
-      <h>50</h>
+      <x>568</x>
+      <y>48</y>
+      <w>88</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>robot:
 TrainingRobot</panel_attributes>
@@ -16,10 +16,10 @@ TrainingRobot</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>450</x>
-      <y>80</y>
-      <w>100</w>
-      <h>50</h>
+      <x>240</x>
+      <y>48</y>
+      <w>80</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>training:
 Training</panel_attributes>
@@ -28,10 +28,10 @@ Training</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1270</x>
-      <y>490</y>
-      <w>110</w>
-      <h>50</h>
+      <x>896</x>
+      <y>368</y>
+      <w>88</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>program:
 Program</panel_attributes>
@@ -40,32 +40,32 @@ Program</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>490</x>
-      <y>120</y>
-      <w>30</w>
-      <h>510</h>
+      <x>272</x>
+      <y>80</y>
+      <w>24</w>
+      <h>280</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;490.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;330.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>900</x>
-      <y>120</y>
-      <w>30</w>
-      <h>590</h>
+      <x>600</x>
+      <y>80</y>
+      <w>24</w>
+      <h>416</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;570.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;500.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1310</x>
-      <y>530</y>
-      <w>30</w>
-      <h>150</h>
+      <x>928</x>
+      <y>400</y>
+      <w>24</w>
+      <h>120</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;130.0</additional_attributes>
@@ -73,44 +73,32 @@ Program</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>490</x>
-      <y>170</y>
-      <w>20</w>
-      <h>260</h>
+      <x>272</x>
+      <y>120</y>
+      <w>16</w>
+      <h>208</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
   </element>
   <element>
-    <id>Relation</id>
+    <id>UMLGeneric</id>
     <coordinates>
-      <x>310</x>
-      <y>180</y>
-      <w>200</w>
+      <x>600</x>
+      <y>120</y>
+      <w>16</w>
+      <h>352</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>928</x>
+      <y>432</y>
+      <w>16</w>
       <h>40</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
-pause()</panel_attributes>
-    <additional_attributes>180.0;20.0;10.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>900</x>
-      <y>170</y>
-      <w>20</w>
-      <h>480</h>
-    </coordinates>
-    <panel_attributes/>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>1310</x>
-      <y>570</y>
-      <w>20</w>
-      <h>50</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -118,12 +106,12 @@ pause()</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>130</x>
-      <y>260</y>
-      <w>170</w>
-      <h>70</h>
+      <x>72</x>
+      <y>160</y>
+      <w>136</w>
+      <h>56</h>
     </coordinates>
-    <panel_attributes>Viene visualizzata la lista di stati con la GUI e viene chiesto all'utente di sceglierne uno.
+    <panel_attributes>Viene visualizzata la lista delle istruzioni con la GUI e viene chiesto all'utente di sceglierne una.
 style=wordwrap
 fontsize=12
 bg=yellow
@@ -133,22 +121,10 @@ layer=5</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>500</x>
-      <y>200</y>
-      <w>420</w>
-      <h>40</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
-getStatesList()</panel_attributes>
-    <additional_attributes>400.0;20.0;10.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>500</x>
-      <y>240</y>
-      <w>420</w>
-      <h>40</h>
+      <x>280</x>
+      <y>176</y>
+      <w>336</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 statesList</panel_attributes>
@@ -157,34 +133,22 @@ statesList</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>310</x>
-      <y>280</y>
-      <w>200</w>
-      <h>40</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;.
-choosenState</panel_attributes>
-    <additional_attributes>180.0;20.0;10.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>500</x>
-      <y>310</y>
-      <w>420</w>
-      <h>40</h>
+      <x>280</x>
+      <y>232</y>
+      <w>336</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
-goToState(choosenState)</panel_attributes>
+goToState(choosenInstruction)</panel_attributes>
     <additional_attributes>400.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>910</x>
-      <y>570</y>
-      <w>420</w>
-      <h>40</h>
+      <x>608</x>
+      <y>432</y>
+      <w>336</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 setCurrentInstruction(chosenInstruction)</panel_attributes>
@@ -193,68 +157,33 @@ setCurrentInstruction(chosenInstruction)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1120</x>
-      <y>300</y>
-      <w>110</w>
-      <h>50</h>
+      <x>776</x>
+      <y>288</y>
+      <w>88</w>
+      <h>40</h>
     </coordinates>
-    <panel_attributes>newstatus:
-choosenState</panel_attributes>
+    <panel_attributes>choosenState:
+Status</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1160</x>
-      <y>340</y>
-      <w>30</w>
-      <h>230</h>
+      <x>808</x>
+      <y>320</y>
+      <w>24</w>
+      <h>112</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;210.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1160</x>
-      <y>380</y>
-      <w>20</w>
-      <h>140</h>
-    </coordinates>
-    <panel_attributes/>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>910</x>
-      <y>380</y>
-      <w>270</w>
+      <x>336</x>
+      <y>320</y>
+      <w>128</w>
       <h>40</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
-getInstruction()</panel_attributes>
-    <additional_attributes>250.0;20.0;10.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>910</x>
-      <y>410</y>
-      <w>270</w>
-      <h>40</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;.
-chosenInstruction</panel_attributes>
-    <additional_attributes>10.0;20.0;250.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>570</x>
-      <y>410</y>
-      <w>160</w>
-      <h>50</h>
     </coordinates>
     <panel_attributes>robodrome:
 TrainingRobodrome</panel_attributes>
@@ -263,10 +192,10 @@ TrainingRobodrome</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>640</x>
-      <y>450</y>
-      <w>30</w>
-      <h>180</h>
+      <x>392</x>
+      <y>352</y>
+      <w>24</w>
+      <h>144</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;160.0</additional_attributes>
@@ -274,10 +203,10 @@ TrainingRobodrome</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>910</x>
-      <y>450</y>
-      <w>270</w>
-      <h>40</h>
+      <x>608</x>
+      <y>344</y>
+      <w>216</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 getPosition()</panel_attributes>
@@ -286,10 +215,10 @@ getPosition()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>910</x>
-      <y>480</y>
-      <w>270</w>
-      <h>40</h>
+      <x>608</x>
+      <y>368</y>
+      <w>216</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.
 chosenPosition</panel_attributes>
@@ -298,10 +227,10 @@ chosenPosition</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>640</x>
-      <y>500</y>
-      <w>20</w>
-      <h>70</h>
+      <x>392</x>
+      <y>392</y>
+      <w>16</w>
+      <h>56</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -309,13 +238,48 @@ chosenPosition</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>650</x>
-      <y>510</y>
-      <w>270</w>
-      <h>40</h>
+      <x>400</x>
+      <y>400</y>
+      <w>216</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 setPosition(chosenPosition)</panel_attributes>
     <additional_attributes>250.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>808</x>
+      <y>352</y>
+      <w>16</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>144</y>
+      <w>336</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+getStatesList()</panel_attributes>
+    <additional_attributes>400.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>608</x>
+      <y>240</y>
+      <w>400</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+choosenState = this.statesList.getState(coosenInstruction)</panel_attributes>
+    <additional_attributes>10.0;30.0;70.0;30.0;70.0;10.0;10.0;10.0</additional_attributes>
   </element>
 </diagram>
