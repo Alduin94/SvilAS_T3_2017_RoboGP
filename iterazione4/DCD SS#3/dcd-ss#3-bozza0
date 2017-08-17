@@ -1,0 +1,1319 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <help_text>// Uncomment the following line to change the fontsize and font:
+fontsize=10
+// fontfamily=SansSerif //possible: SansSerif,Serif,Monospaced
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+// Welcome to UMLet!
+//
+// Double-click on elements to add them to the diagram, or to copy them
+// Edit elements by modifying the text in this panel
+// Hold Ctrl to select multiple elements
+// Use Ctrl+mouse to select via lasso
+//
+// Use +/- or Ctrl+mouse wheel to zoom
+// Drag a whole relation at its central square icon
+//
+// Press Ctrl+C to copy the whole diagram to the system clipboard (then just paste it to, eg, Word)
+// Edit the files in the "palettes" directory to create your own element palettes
+//
+// Select "Custom Elements &gt; New..." to create new element types
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+
+// This text will be stored with each diagram;  use it for notes.</help_text>
+  <zoom_level>11</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>165</x>
+      <y>1694</y>
+      <w>506</w>
+      <h>176</h>
+    </coordinates>
+    <panel_attributes>IniziarePartitaController
+--
+--
+_-new()_
+_+getInstance(): IniziarePartitaController_
++iniziaCreazionePartita(porta: Long, parolaChiave: String) : Bool
++creaPartita(nomeRbd: String, nMaxGioc: Int, nRobotPerGioc: Int,
+                    condFinePart: String, upgradeIniz: Bool): Bool
++accettaRichiesta(nickname: String, robotNames: String[])
++rifiutaRichiesta(nickname: String)
++avviaPartita(): Bool
++annullaPartita(): Bool
+
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>352</x>
+      <y>1606</y>
+      <w>198</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m2=0..1
+singleInstance</panel_attributes>
+    <additional_attributes>10.0;80.0;10.0;20.0;140.0;20.0;140.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>220</x>
+      <y>1111</y>
+      <w>605</w>
+      <h>253</h>
+    </coordinates>
+    <panel_attributes>lw=3
+Server
+--
+- port: Int
+- key: String
+--
+_-new(port: Int, key: String)_
+_+getInstance(port: Int, key: String): Server_
++startAcceptingRequests(match: Match)                       
++run()
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>231</x>
+      <y>1353</y>
+      <w>88</w>
+      <h>363</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=0..1
+m2=1
+theServer</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;310.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>440</x>
+      <y>1034</y>
+      <w>198</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m2=0..1
+singleInstance</panel_attributes>
+    <additional_attributes>10.0;70.0;10.0;20.0;140.0;20.0;140.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1067</x>
+      <y>1056</y>
+      <w>715</w>
+      <h>242</h>
+    </coordinates>
+    <panel_attributes>Match
+--
+_+matchJoinRequestMsg = "matchJoinRequest"_
+_+matchJoinReplyMsg = "matchJoinReply"_
++nMaxPlyrs: Int
++nRobotsXPlyr: Int
++endGameCond: String
++initUpgrade: Bool
+--
+_-new(rbdName: String, nMaxPlyrs: Int, nRobotsXPlyr: Int, endGameCond: String, initUpgrade: Bool): Bool_
+_+getInstance(rbdName: String, nMaxPlyrs: Int, nRobotsXPlyr: Int, endGameCond: String,_
+_                      initUpgrade: Bool): Match_
++addPlayer(nickname: String, robotNames: String[])
++refusePlayer(nickname)
+-getFreeDock(): Int
+/+startMatch(nickname: String)/
+/+getInstructionPool(nickname: String, robotName: String): MatchInstruction[]/
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1309</x>
+      <y>990</y>
+      <w>198</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m2=0..1
+singleInstance</panel_attributes>
+    <additional_attributes>10.0;60.0;10.0;20.0;140.0;20.0;140.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>660</x>
+      <y>1221</y>
+      <w>429</w>
+      <h>550</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=0..1
+m2=1
+theMatch</panel_attributes>
+    <additional_attributes>370.0;10.0;220.0;10.0;220.0;480.0;10.0;480.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>924</x>
+      <y>1705</y>
+      <w>682</w>
+      <h>242</h>
+    </coordinates>
+    <panel_attributes>Connection
+--
+-port: Int
+-boolean: server
+--
+_-new(sock: Socket, serverSide: Bool)_
+_+acceptConnectionRequest(ssock: ServerSocket): Connection_
+_+connectToHost(who: Player, roomName: String, address: InetAddress, port: Int): Connection_
++disconnect()
++sendMessage(msg: String): Bool
++addMessageObserver(mobs: MessageObserver)
++removeMessageObserver(mobs: MessageObserver)
+-connect()
+-updateObservers(msg: Message)
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1397</x>
+      <y>1507</y>
+      <w>385</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt; 
+MessageObserver
+--
+
+--
++notifyMessageObserver(msg: Message)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1584</x>
+      <y>1287</y>
+      <w>33</w>
+      <h>242</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;&gt;
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;200.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1133</x>
+      <y>2068</y>
+      <w>264</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>lw=3
+ConnectionHelper
+--
+--
+_+new()_
++run()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1155</x>
+      <y>1936</y>
+      <w>33</w>
+      <h>154</h>
+    </coordinates>
+    <panel_attributes>lt=-(+)
+</panel_attributes>
+    <additional_attributes>10.0;120.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1276</x>
+      <y>1936</y>
+      <w>88</w>
+      <h>154</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-&gt;&gt;&gt;&gt;&gt;
+m2=1
+myHelper</panel_attributes>
+    <additional_attributes>10.0;120.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>726</x>
+      <y>2046</y>
+      <w>231</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+Runnable
+bg=cyan
+--
+/+run()/</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>726</x>
+      <y>1353</y>
+      <w>33</w>
+      <h>715</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;630.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>946</x>
+      <y>2079</y>
+      <w>209</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;170.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2035</x>
+      <y>1507</y>
+      <w>330</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>lw=1
+Message
+--
+-name: String
+-parameters: Object[]
+--
+_+new(msgName: String)_
++setParameters(par: Object[])
++getParameter(index: Int): Object
++getParametersCount(): Int
++setSenderConnection(conn: Connection)
++getSenderConnection(): Connection
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2123</x>
+      <y>1353</y>
+      <w>154</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+Serializable
+bg=cyan</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2189</x>
+      <y>1386</y>
+      <w>33</w>
+      <h>143</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>638</x>
+      <y>968</y>
+      <w>231</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>ServerSocket
+bg=cyan</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>737</x>
+      <y>990</y>
+      <w>88</w>
+      <h>143</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-&gt;
+m2=0..1
+serverSock</panel_attributes>
+    <additional_attributes>10.0;110.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>572</x>
+      <y>803</y>
+      <w>176</w>
+      <h>121</h>
+    </coordinates>
+    <panel_attributes>Robodrome
+--
+name: String
+rows: int
+columns: int
+--
+/_+moveRobot(robot: Robot,_/
+/_steps: Int,rotation: Int)_/
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>737</x>
+      <y>891</y>
+      <w>396</w>
+      <h>187</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+theRobodrome
+m2=1
+m1=1
+
+</panel_attributes>
+    <additional_attributes>10.0;20.0;340.0;20.0;340.0;150.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2013</x>
+      <y>1133</y>
+      <w>385</w>
+      <h>165</h>
+    </coordinates>
+    <panel_attributes>RobotMarker
+--
+name: String
+color: String
+dock: Int
+owner: String
+--
+bg=orange
+assign(owner: String, dock: Int)
+isAssigned():Bool</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1771</x>
+      <y>1001</y>
+      <w>209</w>
+      <h>242</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+robots
+m1=8
+m2=1
+
+</panel_attributes>
+    <additional_attributes>140.0;10.0;140.0;200.0;10.0;200.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1045</x>
+      <y>1287</y>
+      <w>143</w>
+      <h>176</h>
+    </coordinates>
+    <panel_attributes>lt=[nickname : String]&lt;-
+m2=  1
+m1=  0..n
+players</panel_attributes>
+    <additional_attributes>60.0;140.0;60.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>814</x>
+      <y>1133</y>
+      <w>275</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=0..1
+m2=1
+theMatch</panel_attributes>
+    <additional_attributes>230.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>759</x>
+      <y>1353</y>
+      <w>187</w>
+      <h>462</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=0..n
+m2=1
+clients</panel_attributes>
+    <additional_attributes>150.0;400.0;10.0;400.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1760</x>
+      <y>1837</y>
+      <w>231</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>ObjectOutputStream
+bg=cyan</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1760</x>
+      <y>1881</y>
+      <w>231</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>ObjectInputStream
+bg=cyan</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1595</x>
+      <y>1870</y>
+      <w>187</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-&gt;
+m2=0..1
+sockOut</panel_attributes>
+    <additional_attributes>10.0;20.0;150.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1595</x>
+      <y>1826</y>
+      <w>187</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-&gt;
+m2=0..1
+sockIn</panel_attributes>
+    <additional_attributes>10.0;20.0;150.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1034</x>
+      <y>1441</y>
+      <w>154</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1100</x>
+      <y>1463</y>
+      <w>33</w>
+      <h>264</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>10.0;220.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1221</x>
+      <y>1287</y>
+      <w>143</w>
+      <h>176</h>
+    </coordinates>
+    <panel_attributes>lt=[nickname : String]&lt;-
+m2=  1
+m1=  0..n
+waiting</panel_attributes>
+    <additional_attributes>60.0;140.0;60.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1210</x>
+      <y>1441</y>
+      <w>154</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1276</x>
+      <y>1463</y>
+      <w>33</w>
+      <h>264</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>10.0;220.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>825</x>
+      <y>682</y>
+      <w>275</w>
+      <h>121</h>
+    </coordinates>
+    <panel_attributes>iniziareAllenamentoController
+--
+--
+_-new()_
+_+getInstance(): iniziareAllenamentoController_
++start()
++pause()
++resume()
++setRobodrome()
+
+bg=#b380ff</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>880</x>
+      <y>605</y>
+      <w>198</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m2=0..1
+singleInstance</panel_attributes>
+    <additional_attributes>10.0;70.0;10.0;20.0;140.0;20.0;140.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1265</x>
+      <y>726</y>
+      <w>341</w>
+      <h>143</h>
+    </coordinates>
+    <panel_attributes>Training
+--
+-paused: Bool
+--
+_-new(paused: Bool = true)_
+_+getInstance(): Training_
++updateObservers()
++setPaused(paused: Bool)
+-addObserver(robot: TrainingRobot)
+-notifyObservers("pause"|"update_GUI": String)
+bg=#b380ff</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1353</x>
+      <y>638</y>
+      <w>198</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m2=0..1
+singleInstance</panel_attributes>
+    <additional_attributes>10.0;80.0;10.0;20.0;140.0;20.0;140.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1562</x>
+      <y>407</y>
+      <w>341</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>Status
+--
+position: Position
+--
+_+new(newPosition: Position, curentInstruction: Instruction)_
++getInstruction(): Instruction
++getPosition(): Position
+bg=#b380ff</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>737</x>
+      <y>825</y>
+      <w>550</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+trainingRobodrome
+m2=1
+m1=1
+
+</panel_attributes>
+    <additional_attributes>10.0;20.0;480.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1001</x>
+      <y>396</y>
+      <w>341</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>TrainingRobot
+--
+-robotName: String
+--
+_+new(robotName: String)_
++executeProgram(program)
++updatePauseObserver(paused: Bool)
+bg=#b380ff</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1551</x>
+      <y>176</y>
+      <w>264</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>TrainingInstruction
+--
+
+
+--
+bg=#b380ff</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1144</x>
+      <y>495</y>
+      <w>143</w>
+      <h>264</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+
+
+robot
+m2=1
+m1=1
+
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;220.0;110.0;220.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1089</x>
+      <y>748</y>
+      <w>198</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+training
+m2=1
+m1=1
+
+</panel_attributes>
+    <additional_attributes>160.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>968</x>
+      <y>110</y>
+      <w>330</w>
+      <h>165</h>
+    </coordinates>
+    <panel_attributes>Program
+--
+-running; Bool
+--
++setRunning()
++stopRunning()
++getCurrentInstruction()
++setCurrentInstruction()
++loadInstruction(instruction: Instruction)
++removeAll()
++remove(instruction: Instruction)
++swap(instruction1: Instruction, instruction2: Instruction)
+bg=#b380ff</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1331</x>
+      <y>451</y>
+      <w>253</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+statesList
+m2=1
+m1=0..n
+
+</panel_attributes>
+    <additional_attributes>210.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1661</x>
+      <y>264</y>
+      <w>99</w>
+      <h>165</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+instrunction
+m2=1
+m1=1
+
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1144</x>
+      <y>264</y>
+      <w>77</w>
+      <h>154</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+
+program
+m2=1
+m1=0..1
+
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1287</x>
+      <y>209</y>
+      <w>286</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+instrunctions
+m2=1
+m1=1..n
+
+</panel_attributes>
+    <additional_attributes>240.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>154</x>
+      <y>803</y>
+      <w>286</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>BoardCell
+--
+horizontalLaser: Bool
+verticalLaser: Bool
+--
+_+createBoardCell(comps: String[]): BoardCell_
+getType(): Char
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>429</x>
+      <y>825</y>
+      <w>165</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+board
+m1=n
+m2=1
+
+</panel_attributes>
+    <additional_attributes>10.0;20.0;130.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>429</x>
+      <y>594</y>
+      <w>242</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>BeltCell
+--
+--
+getOutputDirection(): Direction
+hasInputDirection(dir: Direction): Bool
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>220</x>
+      <y>594</y>
+      <w>176</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>PittCell
+--
+--
++hasWall(dir: Direction): Bool
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>363</y>
+      <w>198</w>
+      <h>231</h>
+    </coordinates>
+    <panel_attributes>FoorCell
+--
+--
++isCheckpoint(): Bool
++getCheckpoint(): Int
++isDock(): Bool
++getDock(): Int
++getDockDirection(): Direction
++isLeftRotator(): Bool
++isRightRotator(): Bool
++isUpgrade(): Bool
++isRepair(): Bool
++hasEvenPusher(): Bool
++hasOddPusher(): Bool
++getPusherWall(): Direction
++hasWall(dir: Direction): Bool
++hasLaser(dir: Direction): Bool
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>341</x>
+      <y>429</y>
+      <w>176</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>CellLaser
+--
+row: Int
+col: Int
+wall: Direction
+--
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>187</x>
+      <y>451</y>
+      <w>176</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+allLasers
+m1=1
+m2=0..n
+
+</panel_attributes>
+    <additional_attributes>10.0;20.0;140.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>55</x>
+      <y>583</y>
+      <w>165</w>
+      <h>242</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;150.0;130.0;150.0;130.0;200.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>275</x>
+      <y>682</y>
+      <w>33</w>
+      <h>143</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>352</x>
+      <y>660</y>
+      <w>143</w>
+      <h>165</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;
+</panel_attributes>
+    <additional_attributes>110.0;10.0;110.0;70.0;10.0;70.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1705</x>
+      <y>561</y>
+      <w>264</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt; 
+TrainingObserver
+--
+
+--
++updatePauseObserver(paused: Bool)
+fg=#660080</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1276</x>
+      <y>495</y>
+      <w>451</w>
+      <h>121</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;&gt;
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0;390.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1595</x>
+      <y>660</y>
+      <w>308</w>
+      <h>154</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-&gt;</panel_attributes>
+    <additional_attributes>10.0;120.0;260.0;120.0;260.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>737</x>
+      <y>440</y>
+      <w>143</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt; 
+Runnable
+--
+--
++run()
+fg=#660080</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>869</x>
+      <y>473</y>
+      <w>154</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;120.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1837</x>
+      <y>858</y>
+      <w>231</w>
+      <h>154</h>
+    </coordinates>
+    <panel_attributes>Robot
+--
+hitPoints: int
+lifePoints: int
+shutDown: bool
+--
+_+new(robotName: String, color: String)_
++addUpgrade(upgrade: Upgrade)
++isOwnedBy(nickname: String): bool
++getRegistry(regNumber: Int): Registry
++addUpgrade(upgrade: Upgrade)
+bg=#008000</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2024</x>
+      <y>1001</y>
+      <w>33</w>
+      <h>154</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2211</x>
+      <y>880</y>
+      <w>176</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>Upgrade
+--
+description: String
+packageSize: int
+activationSubPhase: int
+--
++activateUpgrade()
+bg=#008000</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2057</x>
+      <y>902</y>
+      <w>176</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+availableUpgrades
+m1=0..n
+m2=0..1
+
+</panel_attributes>
+    <additional_attributes>140.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>2464</x>
+      <y>924</y>
+      <w>154</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>packageSize è il numero
+di volte che si può
+utilizzare l'upgrade
+diminuisce di 1 ogni volta
+che si chiama
+activateUpgrade()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2035</x>
+      <y>627</y>
+      <w>176</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>Registry
+--
+executionOrder: int
+locked: bool
+--
++isLocked(): bool
++setLock(locked: bool)
+bg=#008000</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1925</x>
+      <y>704</y>
+      <w>132</w>
+      <h>176</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+registyList
+m1=5
+m2=1
+
+</panel_attributes>
+    <additional_attributes>100.0;20.0;10.0;20.0;10.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1958</x>
+      <y>0</y>
+      <w>264</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;abstract&gt;&gt;
+Instruction
+--
+stepsToTake: Int
+turnAngle: Int
+--
+getStepsToTake(): Int
+getTurnAngle(): Int
+bg=#008000</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2343</x>
+      <y>682</y>
+      <w>176</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>MatchInstruction
+--
+priority: int
+--
+bg=#008000</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1639</x>
+      <y>55</y>
+      <w>341</w>
+      <h>143</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;
+</panel_attributes>
+    <additional_attributes>10.0;110.0;10.0;10.0;290.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2211</x>
+      <y>55</y>
+      <w>220</w>
+      <h>649</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;
+</panel_attributes>
+    <additional_attributes>180.0;570.0;180.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2200</x>
+      <y>671</y>
+      <w>165</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+assignedInstruction
+m1=0..1
+m2=0..1
+
+</panel_attributes>
+    <additional_attributes>130.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2024</x>
+      <y>748</y>
+      <w>341</w>
+      <h>132</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+pool
+m1=0..10
+m2=0..1
+
+</panel_attributes>
+    <additional_attributes>290.0;20.0;10.0;20.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>2585</x>
+      <y>704</y>
+      <w>154</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>priority order to be
+compared with java class
+Comparable</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>737</x>
+      <y>869</y>
+      <w>1122</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+robots
+m1=1
+m2=1..n</panel_attributes>
+    <additional_attributes>10.0;10.0;420.0;10.0;420.0;60.0;1000.0;60.0</additional_attributes>
+  </element>
+</diagram>
