@@ -4,7 +4,7 @@
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1720</x>
+      <x>1320</x>
       <y>0</y>
       <w>80</w>
       <h>40</h>
@@ -16,7 +16,7 @@ Training</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1752</x>
+      <x>1352</x>
       <y>32</y>
       <w>24</w>
       <h>576</h>
@@ -27,7 +27,7 @@ Training</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1752</x>
+      <x>1352</x>
       <y>56</y>
       <w>16</w>
       <h>168</h>
@@ -38,7 +38,7 @@ Training</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>864</x>
+      <x>464</x>
       <y>64</y>
       <w>80</w>
       <h>40</h>
@@ -50,7 +50,7 @@ Match</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>896</x>
+      <x>496</x>
       <y>96</y>
       <w>24</w>
       <h>576</h>
@@ -61,7 +61,7 @@ Match</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>896</x>
+      <x>496</x>
       <y>120</y>
       <w>16</w>
       <h>368</h>
@@ -72,7 +72,7 @@ Match</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>736</x>
+      <x>336</x>
       <y>120</y>
       <w>176</w>
       <h>32</h>
@@ -84,7 +84,7 @@ startMatch(nickname)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>736</x>
+      <x>336</x>
       <y>152</y>
       <w>640</w>
       <h>664</h>
@@ -99,7 +99,7 @@ layer=-2
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1160</x>
+      <x>760</x>
       <y>256</y>
       <w>80</w>
       <h>40</h>
@@ -111,7 +111,7 @@ Robot</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1192</x>
+      <x>792</x>
       <y>288</y>
       <w>24</w>
       <h>576</h>
@@ -122,7 +122,7 @@ Robot</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1192</x>
+      <x>792</x>
       <y>336</y>
       <w>16</w>
       <h>56</h>
@@ -133,7 +133,7 @@ Robot</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1032</x>
+      <x>632</x>
       <y>184</y>
       <w>128</w>
       <h>40</h>
@@ -145,7 +145,7 @@ UpgradeManager</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1088</x>
+      <x>688</x>
       <y>216</y>
       <w>24</w>
       <h>128</h>
@@ -156,7 +156,7 @@ UpgradeManager</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>904</x>
+      <x>504</x>
       <y>232</y>
       <w>200</w>
       <h>32</h>
@@ -168,7 +168,7 @@ getRandomUpgrade()</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1088</x>
+      <x>688</x>
       <y>240</y>
       <w>16</w>
       <h>72</h>
@@ -179,7 +179,7 @@ getRandomUpgrade()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>904</x>
+      <x>504</x>
       <y>272</y>
       <w>200</w>
       <h>32</h>
@@ -191,7 +191,7 @@ randomUpgrade</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>416</x>
+      <x>16</x>
       <y>296</y>
       <w>208</w>
       <h>160</h>
@@ -205,7 +205,7 @@ style=wordwrap</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>400</x>
+      <x>0</x>
       <y>480</y>
       <w>200</w>
       <h>96</h>
@@ -217,7 +217,7 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>904</x>
+      <x>504</x>
       <y>344</y>
       <w>304</w>
       <h>32</h>
@@ -229,7 +229,7 @@ addUpgrade(randomUpgrade)</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>408</x>
+      <x>8</x>
       <y>608</y>
       <w>192</w>
       <h>64</h>
