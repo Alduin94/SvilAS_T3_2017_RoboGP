@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.2">
-  <zoom_level>10</zoom_level>
+  <zoom_level>8</zoom_level>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1990</x>
+      <x>1720</x>
       <y>0</y>
-      <w>100</w>
-      <h>50</h>
+      <w>80</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>training:
 Training</panel_attributes>
@@ -16,10 +16,10 @@ Training</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2030</x>
-      <y>40</y>
-      <w>30</w>
-      <h>720</h>
+      <x>1752</x>
+      <y>32</y>
+      <w>24</w>
+      <h>576</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;700.0</additional_attributes>
@@ -27,10 +27,10 @@ Training</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>2030</x>
-      <y>70</y>
-      <w>20</w>
-      <h>210</h>
+      <x>1752</x>
+      <y>56</y>
+      <w>16</w>
+      <h>168</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -38,10 +38,10 @@ Training</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>920</x>
-      <y>80</y>
-      <w>100</w>
-      <h>50</h>
+      <x>864</x>
+      <y>64</y>
+      <w>80</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>theMatch:
 Match</panel_attributes>
@@ -50,10 +50,10 @@ Match</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>960</x>
-      <y>120</y>
-      <w>30</w>
-      <h>720</h>
+      <x>896</x>
+      <y>96</y>
+      <w>24</w>
+      <h>576</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;700.0</additional_attributes>
@@ -61,10 +61,10 @@ Match</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>960</x>
-      <y>150</y>
-      <w>20</w>
-      <h>460</h>
+      <x>896</x>
+      <y>120</y>
+      <w>16</w>
+      <h>368</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -72,10 +72,10 @@ Match</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>760</x>
-      <y>150</y>
-      <w>220</w>
-      <h>40</h>
+      <x>736</x>
+      <y>120</y>
+      <w>176</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 startMatch(nickname)</panel_attributes>
@@ -84,10 +84,10 @@ startMatch(nickname)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>760</x>
-      <y>190</y>
-      <w>800</w>
-      <h>830</h>
+      <x>736</x>
+      <y>152</y>
+      <w>640</w>
+      <h>664</h>
     </coordinates>
     <panel_attributes>for each
 robot owned by
@@ -99,10 +99,10 @@ layer=-2
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1290</x>
-      <y>320</y>
-      <w>100</w>
-      <h>50</h>
+      <x>1160</x>
+      <y>256</y>
+      <w>80</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>robot:
 Robot</panel_attributes>
@@ -111,10 +111,10 @@ Robot</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1330</x>
-      <y>360</y>
-      <w>30</w>
-      <h>720</h>
+      <x>1192</x>
+      <y>288</y>
+      <w>24</w>
+      <h>576</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;700.0</additional_attributes>
@@ -122,10 +122,10 @@ Robot</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1330</x>
-      <y>420</y>
-      <w>20</w>
-      <h>70</h>
+      <x>1192</x>
+      <y>336</y>
+      <w>16</w>
+      <h>56</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -133,10 +133,10 @@ Robot</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1130</x>
-      <y>230</y>
-      <w>160</w>
-      <h>50</h>
+      <x>1032</x>
+      <y>184</y>
+      <w>128</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>upgradeManager:
 UpgradeManager</panel_attributes>
@@ -145,10 +145,10 @@ UpgradeManager</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1200</x>
-      <y>270</y>
-      <w>30</w>
-      <h>160</h>
+      <x>1088</x>
+      <y>216</y>
+      <w>24</w>
+      <h>128</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;140.0</additional_attributes>
@@ -156,10 +156,10 @@ UpgradeManager</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>970</x>
-      <y>290</y>
-      <w>250</w>
-      <h>40</h>
+      <x>904</x>
+      <y>232</y>
+      <w>200</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 getRandomUpgrade()</panel_attributes>
@@ -168,10 +168,10 @@ getRandomUpgrade()</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1200</x>
-      <y>300</y>
-      <w>20</w>
-      <h>90</h>
+      <x>1088</x>
+      <y>240</y>
+      <w>16</w>
+      <h>72</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -179,10 +179,10 @@ getRandomUpgrade()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>970</x>
-      <y>340</y>
-      <w>250</w>
-      <h>40</h>
+      <x>904</x>
+      <y>272</y>
+      <w>200</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 randomUpgrade</panel_attributes>
@@ -191,10 +191,10 @@ randomUpgrade</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>360</x>
-      <y>370</y>
-      <w>260</w>
-      <h>200</h>
+      <x>416</x>
+      <y>296</y>
+      <w>208</w>
+      <h>160</h>
     </coordinates>
     <panel_attributes>nuova classe update manager che gestisce le istanze di updates?
 single istance, crea tutti quelli disponibili e si richede a lui quando bisogna dare un upgrade ad un robot.
@@ -205,10 +205,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>340</x>
-      <y>600</y>
-      <w>250</w>
-      <h>120</h>
+      <x>400</x>
+      <y>480</y>
+      <w>200</w>
+      <h>96</h>
     </coordinates>
     <panel_attributes>quando si assegnano gli upgrade iniziali ai robot, il match chiede all'upgrade manager di dargli una istanza di upgrade da assegnarli scelta random tra quelle disponibili
 style=wordwrap</panel_attributes>
@@ -217,10 +217,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>970</x>
-      <y>430</y>
-      <w>380</w>
-      <h>40</h>
+      <x>904</x>
+      <y>344</y>
+      <w>304</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 addUpgrade(randomUpgrade)</panel_attributes>
@@ -229,42 +229,10 @@ addUpgrade(randomUpgrade)</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>0</x>
-      <y>350</y>
-      <w>300</w>
-      <h>230</h>
-    </coordinates>
-    <panel_attributes>necessaria anche classe MancheManager che gestisce ogni manche di gioco, essa è single instance (una sola manche alla volta).
-
-il Match è colui che fa iniziare la manche una volta che tutti i giocatori hanno finito di scrivere il programma per ogni robot, esso chiama un metodo di MancheManager "startNextManche()"
-style=wordwrap</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLNote</id>
-    <coordinates>
-      <x>0</x>
-      <y>590</y>
-      <w>290</w>
-      <h>430</h>
-    </coordinates>
-    <panel_attributes>Manche manager crea delle classi di tipo sottofase, ognuna estende una classe "subphase" generica, aggiungendo metodi e variabili necessari in base alla sottofase da gestire
-
-le sottofasi così create comunicano cambiamenti di posizione e fanno muovere i robot sul robodromo, che a sua volta comunica al Match le stat aggiornate dei robot così che possano essere aggiornate (es punti vista persi, upgrade ricevuti, punti di salvataggio ecc).
-
-ogni subphase genera la subphase seguente, MancheManager inizia solo il processo, l'ultima subPhase restituisce il controllo a Manche che esegue un metodo "endManche()" che a sua volta resutische il controllo a Manche per continuare il processo.
-
-PATTERN GOF DECORATOR
-style=wordwrap</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLNote</id>
-    <coordinates>
-      <x>350</x>
-      <y>760</y>
-      <w>240</w>
-      <h>80</h>
+      <x>408</x>
+      <y>608</y>
+      <w>192</w>
+      <h>64</h>
     </coordinates>
     <panel_attributes>NOTA: in ogni Manche vengono eseguite le 5 sottofasi per 5 volte (una per ogni registro disponibile)
 style=wordwrap</panel_attributes>
