@@ -132,7 +132,7 @@ loop
       <h>44</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
-iniziaPartita()</panel_attributes>
+iniziaManche()</panel_attributes>
     <additional_attributes>210.0;20.0;10.0;20.0</additional_attributes>
   </element>
 </diagram>

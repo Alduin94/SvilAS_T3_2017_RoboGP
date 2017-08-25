@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.2">
-  <zoom_level>13</zoom_level>
+  <zoom_level>9</zoom_level>
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>390</x>
-      <y>0</y>
-      <w>104</w>
-      <h>143</h>
+      <x>315</x>
+      <y>18</y>
+      <w>72</w>
+      <h>99</h>
     </coordinates>
     <panel_attributes>giocatore</panel_attributes>
     <additional_attributes/>
@@ -15,10 +15,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>676</x>
-      <y>78</y>
-      <w>78</w>
-      <h>26</h>
+      <x>513</x>
+      <y>72</y>
+      <w>54</w>
+      <h>18</h>
     </coordinates>
     <panel_attributes>Sistema
 bg=red
@@ -28,10 +28,10 @@ bg=red
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>429</x>
-      <y>117</y>
-      <w>39</w>
-      <h>728</h>
+      <x>342</x>
+      <y>99</y>
+      <w>27</w>
+      <h>504</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;540.0</additional_attributes>
@@ -39,10 +39,10 @@ bg=red
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>702</x>
-      <y>91</y>
-      <w>39</w>
-      <h>754</h>
+      <x>531</x>
+      <y>81</y>
+      <w>27</w>
+      <h>522</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;560.0</additional_attributes>
@@ -50,10 +50,10 @@ bg=red
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>325</x>
-      <y>221</y>
-      <w>520</w>
-      <h>533</h>
+      <x>270</x>
+      <y>171</y>
+      <w>360</w>
+      <h>369</h>
     </coordinates>
     <panel_attributes>halign=left
 alt
@@ -79,10 +79,10 @@ alt
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>702</x>
-      <y>390</y>
-      <w>26</w>
-      <h>78</h>
+      <x>531</x>
+      <y>288</y>
+      <w>18</w>
+      <h>54</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -90,10 +90,10 @@ alt
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>429</x>
-      <y>403</y>
-      <w>299</w>
-      <h>65</h>
+      <x>342</x>
+      <y>297</y>
+      <w>207</w>
+      <h>45</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 programmaRegistro
@@ -103,10 +103,10 @@ programmaRegistro
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>429</x>
-      <y>637</y>
-      <w>299</w>
-      <h>52</h>
+      <x>342</x>
+      <y>459</y>
+      <w>207</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 spegniRobot(robot)</panel_attributes>
@@ -115,10 +115,10 @@ spegniRobot(robot)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>702</x>
-      <y>624</y>
-      <w>26</w>
-      <h>78</h>
+      <x>531</x>
+      <y>450</y>
+      <w>18</w>
+      <h>54</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -126,10 +126,10 @@ spegniRobot(robot)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>247</x>
-      <y>156</y>
-      <w>689</w>
-      <h>663</h>
+      <x>216</x>
+      <y>126</y>
+      <w>477</w>
+      <h>459</h>
     </coordinates>
     <panel_attributes>halign=left
 loop
@@ -140,10 +140,10 @@ loop
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>351</x>
-      <y>299</y>
-      <w>468</w>
-      <h>221</h>
+      <x>288</x>
+      <y>225</y>
+      <w>324</w>
+      <h>153</h>
     </coordinates>
     <panel_attributes>halign=left
 loop
