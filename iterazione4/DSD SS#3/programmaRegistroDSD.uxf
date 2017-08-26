@@ -24,14 +24,14 @@
 
 
 // This text will be stored with each diagram;  use it for notes.</help_text>
-  <zoom_level>9</zoom_level>
+  <zoom_level>10</zoom_level>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1251</x>
-      <y>567</y>
-      <w>99</w>
-      <h>45</h>
+      <x>1110</x>
+      <y>390</y>
+      <w>110</w>
+      <h>50</h>
     </coordinates>
     <panel_attributes>robot:
 RobotMarker</panel_attributes>
@@ -40,10 +40,10 @@ RobotMarker</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1287</x>
-      <y>603</y>
-      <w>27</w>
-      <h>234</h>
+      <x>1150</x>
+      <y>430</y>
+      <w>30</w>
+      <h>260</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;240.0</additional_attributes>
@@ -51,10 +51,10 @@ RobotMarker</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1287</x>
-      <y>639</y>
-      <w>18</w>
-      <h>45</h>
+      <x>1150</x>
+      <y>470</y>
+      <w>20</w>
+      <h>50</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -62,18 +62,20 @@ RobotMarker</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>738</x>
-      <y>711</y>
-      <w>630</w>
-      <h>117</h>
+      <x>510</x>
+      <y>550</y>
+      <w>730</w>
+      <h>130</h>
     </coordinates>
     <panel_attributes>halign=left
 alt
 --
-registry.isLocked() == false
+chosenRegistry.isLocked() == false
 
 
 
+-.
+[...]
 
 
 
@@ -84,18 +86,11 @@ registry.isLocked() == false
     <id>UMLNote</id>
     <coordinates>
       <x>0</x>
-      <y>81</y>
-      <w>396</w>
-      <h>234</h>
+      <y>60</y>
+      <w>440</w>
+      <h>100</h>
     </coordinates>
-    <panel_attributes>il giocatore ha ricevuto il nuovo pool di schede istruzione per ogni robot che controlla
-
-una volta ricevute i pool, parte un timer, se il giocatore non fa ready() prima dello scadere del timer allora i registri vuoti dei suoi robot vengono riempiti a caso
-
-per ogni robot deve assegnare una schede istuzione presa dal pool di quel ad registro non bloccato del robot, oppure puoò decidere di spegnere il robot
-
-una volta pronto il giocatore fa ready() e il match manda un messaggio al server con tutti i robot del giocatore programmati/spenti
-
+    <panel_attributes>all'inizio di ogni manche il server manda al client la lista dei suoi robot aggiornata dopo l'esecuione della manche precedente (robotmarker è serializable), con il nuovo pool di schede istruzione assegnate casualmente. e il pool degli upgrade ancora utilizzabili
 
 style=wordwrap</panel_attributes>
     <additional_attributes/>
@@ -103,56 +98,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1035</x>
-      <y>72</y>
-      <w>90</w>
-      <h>45</h>
-    </coordinates>
-    <panel_attributes>message:
-Message</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>801</x>
-      <y>72</y>
-      <w>252</w>
-      <h>36</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;.
-new("programdRobot")</panel_attributes>
-    <additional_attributes>260.0;20.0;10.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>1071</x>
-      <y>108</y>
-      <w>27</w>
-      <h>108</h>
-    </coordinates>
-    <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>1071</x>
-      <y>144</y>
-      <w>18</w>
-      <h>18</h>
-    </coordinates>
-    <panel_attributes/>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>747</x>
-      <y>0</y>
-      <w>117</w>
-      <h>45</h>
+      <x>720</x>
+      <y>200</y>
+      <w>130</w>
+      <h>50</h>
     </coordinates>
     <panel_attributes>controller:
 PlayerController</panel_attributes>
@@ -161,21 +110,21 @@ PlayerController</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>792</x>
-      <y>36</y>
-      <w>27</w>
-      <h>225</h>
+      <x>770</x>
+      <y>240</y>
+      <w>30</w>
+      <h>500</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;230.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;480.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>792</x>
-      <y>72</y>
-      <w>18</w>
-      <h>144</h>
+      <x>770</x>
+      <y>280</y>
+      <w>20</w>
+      <h>380</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -183,107 +132,34 @@ PlayerController</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>423</x>
-      <y>72</y>
-      <w>387</w>
-      <h>36</h>
+      <x>320</x>
+      <y>280</y>
+      <w>470</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 setRegistry(robotName, registryNum, choosenInstruction)</panel_attributes>
-    <additional_attributes>410.0;20.0;10.0;20.0</additional_attributes>
+    <additional_attributes>450.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>801</x>
-      <y>135</y>
-      <w>288</w>
-      <h>36</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;-
-setParameters(array(robotName: [))</panel_attributes>
-    <additional_attributes>300.0;20.0;10.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLNote</id>
-    <coordinates>
-      <x>72</x>
-      <y>324</y>
-      <w>396</w>
-      <h>234</h>
-    </coordinates>
-    <panel_attributes>prima di iniziare a giocare quando vengono inizializzate le classi del client, vengono creati tanti oggetti robot quanti sono i robot controllati dal giocatore, questi serviranno a tenere traccia delle statistiche dei robot e si aggiorneranno con i messaggi del server così che il client abbia una copia in locale del robot e non deve chiedere ogni volta al server info su un suo robot.
-
-all'inizio di ogni manche il server manda al client la lista dei suoi robot aggiornata dopo l'esecuione della manche precedente (robotmarker è serializable), con il nuovo pool di schede istruzione assegnate casualmente.
-
-style=wordwrap</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>900</x>
-      <y>333</y>
-      <w>117</w>
-      <h>45</h>
-    </coordinates>
-    <panel_attributes>controller:
-PlayerController</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>945</x>
-      <y>369</y>
-      <w>27</w>
-      <h>513</h>
-    </coordinates>
-    <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;550.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>945</x>
-      <y>468</y>
-      <w>18</w>
-      <h>342</h>
-    </coordinates>
-    <panel_attributes/>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>558</x>
-      <y>468</y>
-      <w>405</w>
-      <h>36</h>
+      <x>780</x>
+      <y>310</y>
+      <w>350</w>
+      <h>70</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
-setRegistry(robotName, registryNum, choosenInstruction)</panel_attributes>
-    <additional_attributes>430.0;20.0;10.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>954</x>
-      <y>486</y>
-      <w>351</w>
-      <h>63</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
-robot = this.robotNames.get(robotName)</panel_attributes>
+robot = this.robots.get(robotName)</panel_attributes>
     <additional_attributes>10.0;50.0;80.0;50.0;80.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>954</x>
-      <y>630</y>
-      <w>351</w>
-      <h>36</h>
+      <x>780</x>
+      <y>460</y>
+      <w>390</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 getRegistry(registryNum)</panel_attributes>
@@ -292,10 +168,10 @@ getRegistry(registryNum)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>954</x>
-      <y>657</y>
-      <w>351</w>
-      <h>36</h>
+      <x>780</x>
+      <y>490</y>
+      <w>390</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 chosenRegistry</panel_attributes>
@@ -304,10 +180,10 @@ chosenRegistry</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1287</x>
-      <y>738</y>
-      <w>18</w>
-      <h>45</h>
+      <x>1150</x>
+      <y>580</y>
+      <w>20</w>
+      <h>50</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -315,13 +191,13 @@ chosenRegistry</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>945</x>
-      <y>738</y>
-      <w>360</w>
-      <h>36</h>
+      <x>780</x>
+      <y>580</y>
+      <w>390</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 setRegistry(registryNum, choosenInstruction)</panel_attributes>
-    <additional_attributes>380.0;20.0;10.0;20.0</additional_attributes>
+    <additional_attributes>370.0;20.0;10.0;20.0</additional_attributes>
   </element>
 </diagram>

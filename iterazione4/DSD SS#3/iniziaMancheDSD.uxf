@@ -1,85 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.2">
-  <zoom_level>8</zoom_level>
+  <zoom_level>9</zoom_level>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1320</x>
-      <y>0</y>
-      <w>80</w>
-      <h>40</h>
-    </coordinates>
-    <panel_attributes>training:
-Training</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>1352</x>
-      <y>32</y>
-      <w>24</w>
-      <h>576</h>
-    </coordinates>
-    <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;700.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>1352</x>
-      <y>56</y>
-      <w>16</w>
-      <h>168</h>
-    </coordinates>
-    <panel_attributes/>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLNote</id>
-    <coordinates>
-      <x>16</x>
-      <y>296</y>
-      <w>208</w>
-      <h>160</h>
-    </coordinates>
-    <panel_attributes>nuova classe update manager che gestisce le istanze di updates?
-single istance, crea tutti quelli disponibili e si richede a lui quando bisogna dare un upgrade ad un robot.
-dato che gli update globali sono definiti da un file questa classe quando è creata legge il file a inizio match e gestisce gli upgrade per quel match
-style=wordwrap</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLNote</id>
-    <coordinates>
-      <x>0</x>
-      <y>480</y>
-      <w>200</w>
-      <h>96</h>
-    </coordinates>
-    <panel_attributes>quando si assegnano gli upgrade iniziali ai robot, il match chiede all'upgrade manager di dargli una istanza di upgrade da assegnarli scelta random tra quelle disponibili
-style=wordwrap</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLNote</id>
-    <coordinates>
-      <x>8</x>
-      <y>608</y>
-      <w>192</w>
-      <h>64</h>
-    </coordinates>
-    <panel_attributes>NOTA: in ogni Manche vengono eseguite le 5 sottofasi per 5 volte (una per ogni registro disponibile)
-style=wordwrap</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>512</x>
-      <y>240</y>
-      <w>80</w>
-      <h>40</h>
+      <x>1773</x>
+      <y>216</y>
+      <w>90</w>
+      <h>45</h>
     </coordinates>
     <panel_attributes>match:
 Match</panel_attributes>
@@ -88,10 +16,45 @@ Match</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>544</x>
-      <y>272</y>
-      <w>24</w>
-      <h>320</h>
+      <x>1818</x>
+      <y>252</y>
+      <w>27</w>
+      <h>648</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;700.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1818</x>
+      <y>567</y>
+      <w>18</w>
+      <h>189</h>
+    </coordinates>
+    <panel_attributes>
+fg=red</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>0</x>
+      <y>315</y>
+      <w>216</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>NOTA: in ogni Manche vengono eseguite le 5 sottofasi per 5 volte (una per ogni registro disponibile)
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>576</x>
+      <y>153</y>
+      <w>27</w>
+      <h>360</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;380.0</additional_attributes>
@@ -99,10 +62,10 @@ Match</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>408</x>
-      <y>304</y>
-      <w>152</w>
-      <h>32</h>
+      <x>423</x>
+      <y>189</y>
+      <w>171</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 startManche()</panel_attributes>
@@ -111,10 +74,10 @@ startManche()</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>544</x>
-      <y>312</y>
-      <w>16</w>
-      <h>224</h>
+      <x>576</x>
+      <y>198</y>
+      <w>18</w>
+      <h>252</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -122,10 +85,10 @@ startManche()</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>760</x>
-      <y>312</y>
-      <w>80</w>
-      <h>40</h>
+      <x>882</x>
+      <y>198</y>
+      <w>90</w>
+      <h>45</h>
     </coordinates>
     <panel_attributes>newmsg:
 Message</panel_attributes>
@@ -134,10 +97,10 @@ Message</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>792</x>
-      <y>376</y>
-      <w>16</w>
-      <h>16</h>
+      <x>918</x>
+      <y>270</y>
+      <w>18</w>
+      <h>18</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -145,46 +108,46 @@ Message</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>552</x>
-      <y>320</y>
-      <w>224</w>
-      <h>32</h>
+      <x>585</x>
+      <y>207</y>
+      <w>315</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;.
-new("programdRobots")</panel_attributes>
-    <additional_attributes>260.0;20.0;10.0;20.0</additional_attributes>
+new("startManche")</panel_attributes>
+    <additional_attributes>330.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>552</x>
-      <y>368</y>
-      <w>256</w>
-      <h>32</h>
+      <x>585</x>
+      <y>261</y>
+      <w>351</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
-setParameters(this.Robots)</panel_attributes>
-    <additional_attributes>300.0;20.0;10.0;20.0</additional_attributes>
+setParameters(this.robots.values().toArray())</panel_attributes>
+    <additional_attributes>370.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>552</x>
-      <y>400</y>
-      <w>256</w>
-      <h>32</h>
+      <x>585</x>
+      <y>297</y>
+      <w>351</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 setSenderConnection(serverConn)</panel_attributes>
-    <additional_attributes>300.0;20.0;10.0;20.0</additional_attributes>
+    <additional_attributes>370.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>792</x>
-      <y>408</y>
-      <w>16</w>
-      <h>16</h>
+      <x>918</x>
+      <y>306</y>
+      <w>18</w>
+      <h>18</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -192,10 +155,10 @@ setSenderConnection(serverConn)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>792</x>
-      <y>344</y>
-      <w>24</w>
-      <h>96</h>
+      <x>918</x>
+      <y>234</y>
+      <w>27</w>
+      <h>108</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
@@ -203,22 +166,22 @@ setSenderConnection(serverConn)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>552</x>
-      <y>496</y>
-      <w>256</w>
-      <h>32</h>
+      <x>585</x>
+      <y>405</y>
+      <w>351</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 sendMessage(newmsg)</panel_attributes>
-    <additional_attributes>300.0;20.0;10.0;20.0</additional_attributes>
+    <additional_attributes>370.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>760</x>
-      <y>440</y>
-      <w>80</w>
-      <h>40</h>
+      <x>882</x>
+      <y>342</y>
+      <w>90</w>
+      <h>45</h>
     </coordinates>
     <panel_attributes>serverConn:
 Connection</panel_attributes>
@@ -227,10 +190,10 @@ Connection</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>792</x>
-      <y>472</y>
-      <w>24</w>
-      <h>96</h>
+      <x>918</x>
+      <y>378</y>
+      <w>27</w>
+      <h>108</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
@@ -238,10 +201,10 @@ Connection</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>792</x>
-      <y>496</y>
-      <w>16</w>
-      <h>40</h>
+      <x>918</x>
+      <y>405</y>
+      <w>18</w>
+      <h>45</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -249,22 +212,22 @@ Connection</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>800</x>
-      <y>504</y>
-      <w>352</w>
-      <h>32</h>
+      <x>927</x>
+      <y>414</y>
+      <w>306</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-asyncMsg</panel_attributes>
-    <additional_attributes>420.0;20.0;10.0;20.0</additional_attributes>
+readyMsg</panel_attributes>
+    <additional_attributes>320.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>408</x>
-      <y>144</y>
-      <w>80</w>
-      <h>32</h>
+      <x>423</x>
+      <y>9</y>
+      <w>90</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>Client side
 style=wordwrap</panel_attributes>
@@ -273,13 +236,193 @@ style=wordwrap</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>1064</x>
-      <y>312</y>
-      <w>80</w>
-      <h>48</h>
+      <x>1278</x>
+      <y>108</y>
+      <w>90</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>Server side
 style=wordwrap</panel_attributes>
     <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>0</x>
+      <y>216</y>
+      <w>216</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>il client dopo che ha prorammato i suoi robot, li mette in un messaggio e li invia al server
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>531</x>
+      <y>117</y>
+      <w>117</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>controller:
+PlayerController</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1062</x>
+      <y>0</y>
+      <w>27</w>
+      <h>639</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;690.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1161</x>
+      <y>216</y>
+      <w>117</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>conn.myHelper:
+Helper</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1215</x>
+      <y>252</y>
+      <w>27</w>
+      <h>306</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;320.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1215</x>
+      <y>414</y>
+      <w>18</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>
+fg=red</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1224</x>
+      <y>477</y>
+      <w>342</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+updateObservers(msg)
+fg=red</panel_attributes>
+    <additional_attributes>360.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1557</x>
+      <y>567</y>
+      <w>279</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+notifyMessageReceived(readyMsg)
+fg=red</panel_attributes>
+    <additional_attributes>290.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1332</x>
+      <y>216</y>
+      <w>144</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>p2p.sockIn:
+ObjectInputStream</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1395</x>
+      <y>252</y>
+      <w>27</w>
+      <h>234</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;240.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1224</x>
+      <y>432</y>
+      <w>198</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+msg = readObject()
+fg=red</panel_attributes>
+    <additional_attributes>200.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1503</x>
+      <y>216</y>
+      <w>117</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>conn:
+Connection</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1548</x>
+      <y>252</y>
+      <w>27</w>
+      <h>396</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;420.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1548</x>
+      <y>468</y>
+      <w>18</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>
+fg=red</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1557</x>
+      <y>513</y>
+      <w>261</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+msg.setSenderConnection(this)
+fg=red</panel_attributes>
+    <additional_attributes>10.0;40.0;50.0;40.0;50.0;10.0;10.0;10.0</additional_attributes>
   </element>
 </diagram>
