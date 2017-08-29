@@ -5,7 +5,7 @@
     <id>UMLGeneric</id>
     <coordinates>
       <x>1161</x>
-      <y>468</y>
+      <y>603</y>
       <w>90</w>
       <h>45</h>
     </coordinates>
@@ -17,7 +17,7 @@ Match</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>1197</x>
-      <y>504</y>
+      <y>639</y>
       <w>27</w>
       <h>288</h>
     </coordinates>
@@ -28,7 +28,7 @@ Match</panel_attributes>
     <id>UMLGeneric</id>
     <coordinates>
       <x>1197</x>
-      <y>531</y>
+      <y>666</y>
       <w>18</w>
       <h>234</h>
     </coordinates>
@@ -40,7 +40,7 @@ fg=black</panel_attributes>
     <id>UMLNote</id>
     <coordinates>
       <x>0</x>
-      <y>261</y>
+      <y>396</y>
       <w>216</w>
       <h>72</h>
     </coordinates>
@@ -52,7 +52,7 @@ style=wordwrap</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>576</x>
-      <y>99</y>
+      <y>234</y>
       <w>27</w>
       <h>360</h>
     </coordinates>
@@ -63,7 +63,7 @@ style=wordwrap</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>423</x>
-      <y>135</y>
+      <y>270</y>
       <w>171</w>
       <h>36</h>
     </coordinates>
@@ -75,7 +75,7 @@ startManche()</panel_attributes>
     <id>UMLGeneric</id>
     <coordinates>
       <x>576</x>
-      <y>126</y>
+      <y>261</y>
       <w>18</w>
       <h>270</h>
     </coordinates>
@@ -86,7 +86,7 @@ startManche()</panel_attributes>
     <id>UMLGeneric</id>
     <coordinates>
       <x>882</x>
-      <y>144</y>
+      <y>279</y>
       <w>90</w>
       <h>45</h>
     </coordinates>
@@ -98,7 +98,7 @@ Message</panel_attributes>
     <id>UMLGeneric</id>
     <coordinates>
       <x>918</x>
-      <y>216</y>
+      <y>351</y>
       <w>18</w>
       <h>18</h>
     </coordinates>
@@ -109,7 +109,7 @@ Message</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>585</x>
-      <y>153</y>
+      <y>288</y>
       <w>315</w>
       <h>36</h>
     </coordinates>
@@ -121,31 +121,19 @@ new("startManche")</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>585</x>
-      <y>207</y>
+      <y>378</y>
       <w>351</w>
       <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
-setParameters(this.robots.values().toArray())</panel_attributes>
-    <additional_attributes>370.0;20.0;10.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>585</x>
-      <y>243</y>
-      <w>351</w>
-      <h>36</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
-setSenderConnection(serverConn)</panel_attributes>
+setSenderConnection(connToServer)</panel_attributes>
     <additional_attributes>370.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
       <x>918</x>
-      <y>252</y>
+      <y>387</y>
       <w>18</w>
       <h>18</h>
     </coordinates>
@@ -156,7 +144,7 @@ setSenderConnection(serverConn)</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>918</x>
-      <y>180</y>
+      <y>315</y>
       <w>27</w>
       <h>108</h>
     </coordinates>
@@ -167,7 +155,7 @@ setSenderConnection(serverConn)</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>585</x>
-      <y>351</y>
+      <y>486</y>
       <w>351</w>
       <h>36</h>
     </coordinates>
@@ -179,7 +167,7 @@ sendMessage(newmsg)</panel_attributes>
     <id>UMLGeneric</id>
     <coordinates>
       <x>873</x>
-      <y>288</y>
+      <y>423</y>
       <w>108</w>
       <h>45</h>
     </coordinates>
@@ -191,7 +179,7 @@ Connection</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>918</x>
-      <y>324</y>
+      <y>459</y>
       <w>27</w>
       <h>108</h>
     </coordinates>
@@ -202,7 +190,7 @@ Connection</panel_attributes>
     <id>UMLGeneric</id>
     <coordinates>
       <x>918</x>
-      <y>351</y>
+      <y>486</y>
       <w>18</w>
       <h>45</h>
     </coordinates>
@@ -213,7 +201,7 @@ Connection</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>927</x>
-      <y>360</y>
+      <y>495</y>
       <w>216</w>
       <h>36</h>
     </coordinates>
@@ -225,7 +213,7 @@ readyMsg</panel_attributes>
     <id>UMLNote</id>
     <coordinates>
       <x>450</x>
-      <y>0</y>
+      <y>135</y>
       <w>90</w>
       <h>36</h>
     </coordinates>
@@ -237,7 +225,7 @@ style=wordwrap</panel_attributes>
     <id>UMLNote</id>
     <coordinates>
       <x>1044</x>
-      <y>216</y>
+      <y>351</y>
       <w>90</w>
       <h>36</h>
     </coordinates>
@@ -249,7 +237,7 @@ style=wordwrap</panel_attributes>
     <id>UMLNote</id>
     <coordinates>
       <x>0</x>
-      <y>162</y>
+      <y>297</y>
       <w>216</w>
       <h>72</h>
     </coordinates>
@@ -261,7 +249,7 @@ style=wordwrap</panel_attributes>
     <id>UMLGeneric</id>
     <coordinates>
       <x>531</x>
-      <y>63</y>
+      <y>198</y>
       <w>117</w>
       <h>45</h>
     </coordinates>
@@ -273,7 +261,7 @@ PlayerController</panel_attributes>
     <id>UMLGeneric</id>
     <coordinates>
       <x>1044</x>
-      <y>288</y>
+      <y>423</y>
       <w>162</w>
       <h>45</h>
     </coordinates>
@@ -285,7 +273,7 @@ Helper</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>1125</x>
-      <y>324</y>
+      <y>459</y>
       <w>27</w>
       <h>180</h>
     </coordinates>
@@ -296,7 +284,7 @@ Helper</panel_attributes>
     <id>UMLGeneric</id>
     <coordinates>
       <x>1125</x>
-      <y>360</y>
+      <y>495</y>
       <w>18</w>
       <h>99</h>
     </coordinates>
@@ -308,7 +296,7 @@ fg=red</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>1134</x>
-      <y>423</y>
+      <y>558</y>
       <w>342</w>
       <h>36</h>
     </coordinates>
@@ -321,7 +309,7 @@ fg=red</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>1206</x>
-      <y>531</y>
+      <y>666</y>
       <w>270</w>
       <h>36</h>
     </coordinates>
@@ -334,7 +322,7 @@ fg=black</panel_attributes>
     <id>UMLGeneric</id>
     <coordinates>
       <x>1242</x>
-      <y>288</y>
+      <y>423</y>
       <w>144</w>
       <h>45</h>
     </coordinates>
@@ -346,7 +334,7 @@ ObjectInputStream</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>1305</x>
-      <y>324</y>
+      <y>459</y>
       <w>27</w>
       <h>108</h>
     </coordinates>
@@ -357,7 +345,7 @@ ObjectInputStream</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>1134</x>
-      <y>378</y>
+      <y>513</y>
       <w>198</w>
       <h>36</h>
     </coordinates>
@@ -370,7 +358,7 @@ fg=red</panel_attributes>
     <id>UMLGeneric</id>
     <coordinates>
       <x>1413</x>
-      <y>288</y>
+      <y>423</y>
       <w>117</w>
       <h>45</h>
     </coordinates>
@@ -382,7 +370,7 @@ Connection</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>1458</x>
-      <y>324</y>
+      <y>459</y>
       <w>27</w>
       <h>270</h>
     </coordinates>
@@ -393,7 +381,7 @@ Connection</panel_attributes>
     <id>UMLGeneric</id>
     <coordinates>
       <x>1458</x>
-      <y>414</y>
+      <y>549</y>
       <w>18</w>
       <h>144</h>
     </coordinates>
@@ -405,7 +393,7 @@ fg=black</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>1467</x>
-      <y>459</y>
+      <y>594</y>
       <w>261</w>
       <h>54</h>
     </coordinates>
@@ -418,7 +406,7 @@ fg=black</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>1206</x>
-      <y>558</y>
+      <y>693</y>
       <w>234</w>
       <h>54</h>
     </coordinates>
@@ -431,7 +419,7 @@ fg=black</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>1206</x>
-      <y>603</y>
+      <y>738</y>
       <w>405</w>
       <h>54</h>
     </coordinates>
@@ -444,7 +432,7 @@ fg=black</panel_attributes>
     <id>UMLFrame</id>
     <coordinates>
       <x>1062</x>
-      <y>666</y>
+      <y>801</y>
       <w>387</w>
       <h>135</h>
     </coordinates>
@@ -461,7 +449,7 @@ in robotList
     <id>Relation</id>
     <coordinates>
       <x>1206</x>
-      <y>702</y>
+      <y>837</y>
       <w>225</w>
       <h>54</h>
     </coordinates>
@@ -469,5 +457,41 @@ in robotList
 this.updateRobot(robot)
 fg=black</panel_attributes>
     <additional_attributes>10.0;40.0;60.0;40.0;60.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>585</x>
+      <y>342</y>
+      <w>351</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+setParameters(this.robots.values().toArray())</panel_attributes>
+    <additional_attributes>370.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>405</x>
+      <y>198</y>
+      <w>216</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+readyMsg</panel_attributes>
+    <additional_attributes>220.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>531</x>
+      <y>171</y>
+      <w>216</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+readyMsg</panel_attributes>
+    <additional_attributes>220.0;20.0;10.0;20.0</additional_attributes>
   </element>
 </diagram>
