@@ -473,20 +473,8 @@ setParameters(this.robots.values().toArray())</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>405</x>
+      <x>333</x>
       <y>198</y>
-      <w>216</w>
-      <h>36</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;-
-readyMsg</panel_attributes>
-    <additional_attributes>220.0;20.0;10.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>531</x>
-      <y>171</y>
       <w>216</w>
       <h>36</h>
     </coordinates>
