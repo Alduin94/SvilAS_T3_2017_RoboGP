@@ -24,173 +24,86 @@
 
 
 // This text will be stored with each diagram;  use it for notes.</help_text>
-  <zoom_level>7</zoom_level>
+  <zoom_level>9</zoom_level>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>616</x>
-      <y>70</y>
-      <w>70</w>
-      <h>35</h>
+      <x>738</x>
+      <y>225</y>
+      <w>90</w>
+      <h>45</h>
     </coordinates>
     <panel_attributes>match:
 Match</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>644</x>
-      <y>98</y>
-      <w>21</w>
-      <h>644</h>
-    </coordinates>
-    <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;900.0</additional_attributes>
-  </element>
-  <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>644</x>
-      <y>119</y>
-      <w>14</w>
-      <h>42</h>
-    </coordinates>
-    <panel_attributes>
-fg=black</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>434</x>
-      <y>63</y>
-      <w>112</w>
-      <h>35</h>
+      <x>369</x>
+      <y>216</y>
+      <w>144</w>
+      <h>45</h>
     </coordinates>
     <panel_attributes>Match.matchHelper:
-matchThread</panel_attributes>
+MatchThread</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>483</x>
-      <y>91</y>
-      <w>21</w>
-      <h>154</h>
+      <x>432</x>
+      <y>252</y>
+      <w>27</w>
+      <h>378</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;200.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;400.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>483</x>
-      <y>112</y>
-      <w>14</w>
-      <h>105</h>
+      <x>432</x>
+      <y>279</y>
+      <w>18</w>
+      <h>315</h>
     </coordinates>
     <panel_attributes>
 fg=red</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>490</x>
-      <y>112</y>
-      <w>168</w>
-      <h>28</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
-checkPlayersReady()
-fg=red</panel_attributes>
-    <additional_attributes>220.0;20.0;10.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>490</x>
-      <y>133</y>
-      <w>168</w>
-      <h>28</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;.
-true
-fg=red</panel_attributes>
-    <additional_attributes>10.0;20.0;220.0;20.0</additional_attributes>
-  </element>
-  <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>210</x>
-      <y>56</y>
-      <w>154</w>
-      <h>112</h>
-    </coordinates>
-    <panel_attributes>controlla che tutti i giocatori sono pronti ad inziare la manche chiedendo a Match.
-
-se sono tutti pronti allora match ritorna true e l'helper fa metodo per eseguiere la prima sottofase
-style=wordwrap</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLNote</id>
-    <coordinates>
-      <x>364</x>
-      <y>0</y>
-      <w>70</w>
-      <h>28</h>
+      <x>261</x>
+      <y>135</y>
+      <w>90</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>Server side
 style=wordwrap</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>644</x>
-      <y>189</y>
-      <w>14</w>
-      <h>525</h>
-    </coordinates>
-    <panel_attributes>
-fg=black</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
     <id>Relation</id>
     <coordinates>
-      <x>490</x>
-      <y>189</y>
-      <w>168</w>
-      <h>28</h>
+      <x>441</x>
+      <y>315</y>
+      <w>351</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
-startManche()
+sendInstructionPools()
 fg=red</panel_attributes>
-    <additional_attributes>220.0;20.0;10.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>651</x>
-      <y>245</y>
-      <w>259</w>
-      <h>49</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
-this.declarationSubphase(registyNum)</panel_attributes>
-    <additional_attributes>10.0;50.0;80.0;50.0;80.0;10.0;10.0;10.0</additional_attributes>
+    <additional_attributes>370.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>567</x>
-      <y>231</y>
-      <w>413</w>
-      <h>287</h>
+      <x>351</x>
+      <y>351</y>
+      <w>522</w>
+      <h>207</h>
     </coordinates>
     <panel_attributes>halign=left
 for each
@@ -202,119 +115,176 @@ registy
     <additional_attributes/>
   </element>
   <element>
-    <id>Relation</id>
+    <id>UMLGeneric</id>
     <coordinates>
-      <x>651</x>
-      <y>301</y>
-      <w>231</w>
-      <h>49</h>
+      <x>774</x>
+      <y>324</y>
+      <w>18</w>
+      <h>18</h>
     </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
-this.moveSubphase(registyNum)</panel_attributes>
-    <additional_attributes>10.0;50.0;80.0;50.0;80.0;10.0;10.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>651</x>
-      <y>357</y>
-      <w>203</w>
-      <h>49</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
-this.rbActivationSubphase()</panel_attributes>
-    <additional_attributes>10.0;50.0;80.0;50.0;80.0;10.0;10.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>651</x>
-      <y>413</y>
-      <w>231</w>
-      <h>49</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
-this.laserAndWeaponsSubphase()</panel_attributes>
-    <additional_attributes>10.0;50.0;80.0;50.0;80.0;10.0;10.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>651</x>
-      <y>462</y>
-      <w>217</w>
-      <h>49</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
-this.touchAndSaveSubphase()</panel_attributes>
-    <additional_attributes>10.0;50.0;80.0;50.0;80.0;10.0;10.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>651</x>
-      <y>532</y>
-      <w>217</w>
-      <h>49</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
-this.isMancheRunning = false</panel_attributes>
-    <additional_attributes>10.0;50.0;80.0;50.0;80.0;10.0;10.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>651</x>
-      <y>588</y>
-      <w>196</w>
-      <h>49</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
-this.numReadyPlayers = 0</panel_attributes>
-    <additional_attributes>10.0;50.0;80.0;50.0;80.0;10.0;10.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLNote</id>
-    <coordinates>
-      <x>224</x>
-      <y>252</y>
-      <w>259</w>
-      <h>322</h>
-    </coordinates>
-    <panel_attributes>ognuno di questi metodi è una sottofase della manche, ogniuno calcola la lista di istruzioni che la robobrome view andrà ad eseguire per quella sottofase e invia la lista ad ogni client.
-
-una volta inviate le liste di istruzioni a tutti i client, il server si mette in attesa che tutti i cliet abbiano eseguito le animazioni e siano pronti a ricevere la lista di instuzioni per la sottofase successiva.
-
-il client quando riceve la lista delle istruzioni la esegue sulla gui per mostrare all'utente la sottofase. una volta terminata l'animazione manda messaggio al server per dire che è pronto a ricevere la lista di istruzioni per animare la sottfase successiva.
-
-il metodo che calcola la sottofase successiva viene eseguito quando il metodo della sottofase precedente ha ricevuto il ready da tutti i giocatori che hanno ricevuto le istruzioni.
-
-BONUS non impleentato: se un utente ha attivato un upgrade durante l'animazione della sottofase, questo verrà segnalato nel messaggio di ready al server, così esso terrà conto se nel calcolare le sottofasi successive bisogna utilizzare upgrade.
-style=wordwrap</panel_attributes>
+    <panel_attributes>
+fg=black</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>651</x>
-      <y>644</y>
-      <w>154</w>
-      <h>49</h>
+      <x>441</x>
+      <y>369</y>
+      <w>351</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
-this.endManche()</panel_attributes>
-    <additional_attributes>10.0;50.0;80.0;50.0;80.0;10.0;10.0;10.0</additional_attributes>
+declarationSubphase(regNum)
+fg=red</panel_attributes>
+    <additional_attributes>370.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
-    <id>UMLNote</id>
+    <id>UMLGeneric</id>
     <coordinates>
-      <x>819</x>
-      <y>658</y>
-      <w>70</w>
-      <h>28</h>
+      <x>774</x>
+      <y>378</y>
+      <w>18</w>
+      <h>18</h>
     </coordinates>
-    <panel_attributes>ref fineMancheDSD
-style=wordwrap</panel_attributes>
+    <panel_attributes>
+fg=black</panel_attributes>
     <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>774</x>
+      <y>414</y>
+      <w>18</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>
+fg=black</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>441</x>
+      <y>405</y>
+      <w>351</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+moveSubPhase(regNum)
+fg=red</panel_attributes>
+    <additional_attributes>370.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>774</x>
+      <y>450</y>
+      <w>18</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>
+fg=black</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>441</x>
+      <y>441</y>
+      <w>351</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+robodromeActivationSubPhase()
+fg=red</panel_attributes>
+    <additional_attributes>370.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>774</x>
+      <y>486</y>
+      <w>18</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>
+fg=black</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>441</x>
+      <y>477</y>
+      <w>351</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+lasersAndWeaponsSubPhase()
+fg=red</panel_attributes>
+    <additional_attributes>370.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>774</x>
+      <y>522</y>
+      <w>18</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>
+fg=black</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>441</x>
+      <y>513</y>
+      <w>351</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+touchAndSaveSubPhase()
+fg=red</panel_attributes>
+    <additional_attributes>370.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>441</x>
+      <y>567</y>
+      <w>351</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+endManche()
+fg=red</panel_attributes>
+    <additional_attributes>370.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>774</x>
+      <y>576</y>
+      <w>18</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>
+fg=black</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>774</x>
+      <y>261</y>
+      <w>27</w>
+      <h>360</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;380.0</additional_attributes>
   </element>
 </diagram>

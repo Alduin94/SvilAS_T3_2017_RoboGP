@@ -28,8 +28,8 @@
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1110</x>
-      <y>390</y>
+      <x>920</x>
+      <y>310</y>
       <w>110</w>
       <h>50</h>
     </coordinates>
@@ -40,8 +40,8 @@ RobotMarker</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1150</x>
-      <y>430</y>
+      <x>960</x>
+      <y>350</y>
       <w>30</w>
       <h>260</h>
     </coordinates>
@@ -51,8 +51,8 @@ RobotMarker</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1150</x>
-      <y>470</y>
+      <x>960</x>
+      <y>390</y>
       <w>20</w>
       <h>50</h>
     </coordinates>
@@ -62,8 +62,8 @@ RobotMarker</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>510</x>
-      <y>550</y>
+      <x>320</x>
+      <y>470</y>
       <w>730</w>
       <h>130</h>
     </coordinates>
@@ -83,23 +83,10 @@ chosenRegistry.isLocked() == false
     <additional_attributes/>
   </element>
   <element>
-    <id>UMLNote</id>
-    <coordinates>
-      <x>0</x>
-      <y>60</y>
-      <w>440</w>
-      <h>100</h>
-    </coordinates>
-    <panel_attributes>all'inizio di ogni manche il server manda al client la lista dei suoi robot aggiornata dopo l'esecuione della manche precedente (robotmarker è serializable), con il nuovo pool di schede istruzione assegnate casualmente. e il pool degli upgrade ancora utilizzabili
-
-style=wordwrap</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>720</x>
-      <y>200</y>
+      <x>530</x>
+      <y>120</y>
       <w>130</w>
       <h>50</h>
     </coordinates>
@@ -110,8 +97,8 @@ PlayerController</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>770</x>
-      <y>240</y>
+      <x>580</x>
+      <y>160</y>
       <w>30</w>
       <h>500</h>
     </coordinates>
@@ -121,8 +108,8 @@ PlayerController</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>770</x>
-      <y>280</y>
+      <x>580</x>
+      <y>200</y>
       <w>20</w>
       <h>380</h>
     </coordinates>
@@ -132,8 +119,8 @@ PlayerController</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>320</x>
-      <y>280</y>
+      <x>130</x>
+      <y>200</y>
       <w>470</w>
       <h>40</h>
     </coordinates>
@@ -144,8 +131,8 @@ setRegistry(robotName, registryNum, choosenInstruction)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>780</x>
-      <y>310</y>
+      <x>590</x>
+      <y>230</y>
       <w>350</w>
       <h>70</h>
     </coordinates>
@@ -156,8 +143,8 @@ robot = this.robots.get(robotName)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>780</x>
-      <y>460</y>
+      <x>590</x>
+      <y>380</y>
       <w>390</w>
       <h>40</h>
     </coordinates>
@@ -168,8 +155,8 @@ getRegistry(registryNum)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>780</x>
-      <y>490</y>
+      <x>590</x>
+      <y>410</y>
       <w>390</w>
       <h>40</h>
     </coordinates>
@@ -180,8 +167,8 @@ chosenRegistry</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1150</x>
-      <y>580</y>
+      <x>960</x>
+      <y>500</y>
       <w>20</w>
       <h>50</h>
     </coordinates>
@@ -191,8 +178,8 @@ chosenRegistry</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>780</x>
-      <y>580</y>
+      <x>590</x>
+      <y>500</y>
       <w>390</w>
       <h>40</h>
     </coordinates>

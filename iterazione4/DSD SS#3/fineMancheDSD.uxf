@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.2">
-  <zoom_level>8</zoom_level>
+  <zoom_level>10</zoom_level>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>536</x>
-      <y>112</y>
-      <w>80</w>
-      <h>40</h>
+      <x>430</x>
+      <y>0</y>
+      <w>100</w>
+      <h>50</h>
     </coordinates>
     <panel_attributes>match:
 Match</panel_attributes>
@@ -16,21 +16,21 @@ Match</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>568</x>
-      <y>144</y>
-      <w>24</w>
-      <h>640</h>
+      <x>470</x>
+      <y>40</y>
+      <w>30</w>
+      <h>1280</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;780.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;1260.0</additional_attributes>
   </element>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>248</x>
-      <y>216</y>
-      <w>760</w>
-      <h>488</h>
+      <x>230</x>
+      <y>190</y>
+      <w>770</w>
+      <h>710</h>
     </coordinates>
     <panel_attributes>halign=left
 for each player
@@ -44,166 +44,38 @@ connection
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>344</x>
-      <y>504</y>
-      <w>240</w>
-      <h>32</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;.
-new("endManche")</panel_attributes>
-    <additional_attributes>10.0;20.0;280.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>272</x>
-      <y>504</y>
-      <w>80</w>
-      <h>32</h>
-    </coordinates>
-    <panel_attributes>endmanche:
-Message</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>304</x>
-      <y>544</y>
-      <w>16</w>
-      <h>16</h>
-    </coordinates>
-    <panel_attributes/>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>312</x>
-      <y>560</y>
-      <w>272</w>
-      <h>32</h>
+      <x>480</x>
+      <y>400</y>
+      <w>260</w>
+      <h>70</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
-setSenderConnection(connToClient)</panel_attributes>
-    <additional_attributes>10.0;20.0;320.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>304</x>
-      <y>528</y>
-      <w>24</w>
-      <h>88</h>
-    </coordinates>
-    <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>312</x>
-      <y>536</y>
-      <w>272</w>
-      <h>32</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
-setParameters(playerRobots)</panel_attributes>
-    <additional_attributes>10.0;20.0;320.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>576</x>
-      <y>440</y>
-      <w>320</w>
-      <h>56</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
-connToClient = this.players.get(nickname)</panel_attributes>
+robotList.remove(robot)</panel_attributes>
     <additional_attributes>10.0;50.0;80.0;50.0;80.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>328</x>
-      <y>600</y>
-      <w>88</w>
-      <h>32</h>
-    </coordinates>
-    <panel_attributes>connToClient:
-Connection</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
     <id>Relation</id>
     <coordinates>
-      <x>360</x>
-      <y>624</y>
-      <w>24</w>
-      <h>72</h>
-    </coordinates>
-    <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>360</x>
-      <y>640</y>
-      <w>16</w>
-      <h>32</h>
-    </coordinates>
-    <panel_attributes/>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>368</x>
-      <y>640</y>
-      <w>216</w>
-      <h>32</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
-sendMessage(endmanche)</panel_attributes>
-    <additional_attributes>10.0;20.0;250.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>72</x>
-      <y>648</y>
-      <w>304</w>
-      <h>32</h>
+      <x>180</x>
+      <y>1240</y>
+      <w>310</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 endMancheMsg</panel_attributes>
-    <additional_attributes>10.0;20.0;360.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>576</x>
-      <y>224</y>
-      <w>328</w>
-      <h>56</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
-playerRobots = this.getPlayerRobots(nickname)</panel_attributes>
-    <additional_attributes>10.0;50.0;60.0;50.0;60.0;10.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;20.0;290.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>440</x>
-      <y>304</y>
-      <w>512</w>
-      <h>136</h>
+      <x>260</x>
+      <y>250</y>
+      <w>710</w>
+      <h>620</h>
     </coordinates>
     <panel_attributes>halign=left
-for each robot
-in playerRobots
+for each
+owned robot
 --
 
 
@@ -211,72 +83,24 @@ in playerRobots
     <additional_attributes/>
   </element>
   <element>
-    <id>UMLGeneric</id>
+    <id>Relation</id>
     <coordinates>
-      <x>832</x>
-      <y>128</y>
-      <w>160</w>
+      <x>480</x>
+      <y>510</y>
+      <w>390</w>
       <h>40</h>
     </coordinates>
-    <panel_attributes>instrManager:
-MatchInstructionsManager</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>576</x>
-      <y>328</y>
-      <w>336</w>
-      <h>32</h>
-    </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
-getRandomInstructionPool(robot.getHitPoints())</panel_attributes>
-    <additional_attributes>400.0;20.0;10.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>576</x>
-      <y>344</y>
-      <w>336</w>
-      <h>32</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;.
-instructionPool</panel_attributes>
-    <additional_attributes>10.0;20.0;400.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>576</x>
-      <y>384</y>
-      <w>280</w>
-      <h>56</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
-robot.setInstructionPool(instructionPool)</panel_attributes>
-    <additional_attributes>10.0;50.0;50.0;50.0;50.0;10.0;10.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>576</x>
-      <y>720</y>
-      <w>336</w>
-      <h>32</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
-resetInstructionPool()</panel_attributes>
-    <additional_attributes>400.0;20.0;10.0;20.0</additional_attributes>
+setLockedRegistries()</panel_attributes>
+    <additional_attributes>370.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>568</x>
-      <y>168</y>
-      <w>16</w>
-      <h>592</h>
+      <x>470</x>
+      <y>80</y>
+      <w>20</w>
+      <h>1200</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -284,57 +108,213 @@ resetInstructionPool()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>896</x>
-      <y>160</y>
-      <w>24</w>
-      <h>624</h>
-    </coordinates>
-    <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;760.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>304</x>
-      <y>568</y>
-      <w>16</w>
-      <h>16</h>
-    </coordinates>
-    <panel_attributes/>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>896</x>
-      <y>328</y>
-      <w>16</w>
-      <h>48</h>
-    </coordinates>
-    <panel_attributes/>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>896</x>
-      <y>728</y>
-      <w>16</w>
-      <h>16</h>
-    </coordinates>
-    <panel_attributes/>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>416</x>
-      <y>168</y>
-      <w>168</w>
-      <h>32</h>
+      <x>280</x>
+      <y>90</y>
+      <w>210</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 endManche()</panel_attributes>
     <additional_attributes>190.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>850</x>
+      <y>330</y>
+      <w>30</w>
+      <h>440</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;420.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>790</x>
+      <y>280</y>
+      <w>150</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>robot:
+MatchRobot</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>290</x>
+      <y>370</y>
+      <w>650</w>
+      <h>280</h>
+    </coordinates>
+    <panel_attributes>halign=left
+alt
+--
+robot.getLifePoints &lt; 1
+
+
+
+
+-.
+robot.getLifePoints &gt; 1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>850</x>
+      <y>510</y>
+      <w>20</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>280</x>
+      <y>920</y>
+      <w>650</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>halign=left
+optional
+--
+robotsUpdated.size() &lt; 1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>850</x>
+      <y>690</y>
+      <w>20</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>480</x>
+      <y>680</y>
+      <w>390</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+checkPointsAllTouched()</panel_attributes>
+    <additional_attributes>370.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>480</x>
+      <y>710</y>
+      <w>390</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+true</panel_attributes>
+    <additional_attributes>370.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>480</x>
+      <y>760</y>
+      <w>240</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+robotWinner = robot</panel_attributes>
+    <additional_attributes>10.0;50.0;80.0;50.0;80.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>290</x>
+      <y>670</y>
+      <w>650</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>optional</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>480</x>
+      <y>120</y>
+      <w>300</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+List robotsUpdated = new List()</panel_attributes>
+    <additional_attributes>10.0;40.0;60.0;40.0;60.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>480</x>
+      <y>570</y>
+      <w>260</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+robotsUpdated.add(robot)</panel_attributes>
+    <additional_attributes>10.0;40.0;60.0;40.0;60.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>280</x>
+      <y>1050</y>
+      <w>650</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>halign=left
+optional
+--
+robotWinner != null</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>480</x>
+      <y>950</y>
+      <w>290</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+endMancheMsg = "allDied"</panel_attributes>
+    <additional_attributes>10.0;50.0;80.0;50.0;80.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>480</x>
+      <y>1080</y>
+      <w>450</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+endMancheMsg = "winner:"+robotWinner.name()</panel_attributes>
+    <additional_attributes>10.0;50.0;80.0;50.0;80.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>480</x>
+      <y>1180</y>
+      <w>410</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+endMancheMsg += robotsUpdated.toString()</panel_attributes>
+    <additional_attributes>10.0;50.0;80.0;50.0;80.0;10.0;10.0;10.0</additional_attributes>
   </element>
 </diagram>

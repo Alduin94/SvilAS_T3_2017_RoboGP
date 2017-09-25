@@ -4,8 +4,8 @@
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>315</x>
-      <y>18</y>
+      <x>513</x>
+      <y>81</y>
       <w>72</w>
       <h>99</h>
     </coordinates>
@@ -15,8 +15,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>513</x>
-      <y>72</y>
+      <x>711</x>
+      <y>135</y>
       <w>54</w>
       <h>18</h>
     </coordinates>
@@ -28,8 +28,8 @@ bg=red
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>342</x>
-      <y>99</y>
+      <x>540</x>
+      <y>162</y>
       <w>27</w>
       <h>504</h>
     </coordinates>
@@ -39,8 +39,8 @@ bg=red
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>531</x>
-      <y>81</y>
+      <x>729</x>
+      <y>144</y>
       <w>27</w>
       <h>522</h>
     </coordinates>
@@ -50,8 +50,8 @@ bg=red
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>270</x>
-      <y>171</y>
+      <x>468</x>
+      <y>234</y>
       <w>360</w>
       <h>369</h>
     </coordinates>
@@ -79,8 +79,8 @@ alt
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>531</x>
-      <y>288</y>
+      <x>729</x>
+      <y>351</y>
       <w>18</w>
       <h>54</h>
     </coordinates>
@@ -90,8 +90,8 @@ alt
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>342</x>
-      <y>297</y>
+      <x>540</x>
+      <y>360</y>
       <w>207</w>
       <h>45</h>
     </coordinates>
@@ -103,8 +103,8 @@ programmaRegistro
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>342</x>
-      <y>459</y>
+      <x>540</x>
+      <y>522</y>
       <w>207</w>
       <h>36</h>
     </coordinates>
@@ -115,8 +115,8 @@ spegniRobot(robot)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>531</x>
-      <y>450</y>
+      <x>729</x>
+      <y>513</y>
       <w>18</w>
       <h>54</h>
     </coordinates>
@@ -126,8 +126,8 @@ spegniRobot(robot)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>216</x>
-      <y>126</y>
+      <x>414</x>
+      <y>189</y>
       <w>477</w>
       <h>459</h>
     </coordinates>
@@ -140,8 +140,8 @@ loop
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>288</x>
-      <y>225</y>
+      <x>486</x>
+      <y>288</y>
       <w>324</w>
       <h>153</h>
     </coordinates>
