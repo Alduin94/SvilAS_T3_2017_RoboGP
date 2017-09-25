@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<diagram program="umlet" version="14.1.1">
+<diagram program="umlet" version="14.2">
   <zoom_level>10</zoom_level>
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>480</x>
+      <x>460</x>
       <y>0</y>
       <w>80</w>
       <h>110</h>
@@ -15,7 +15,7 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>700</x>
+      <x>680</x>
       <y>60</y>
       <w>80</w>
       <h>30</h>
@@ -28,7 +28,7 @@ bg=red
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>510</x>
+      <x>490</x>
       <y>90</y>
       <w>30</w>
       <h>680</h>
@@ -39,7 +39,7 @@ bg=red
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>730</x>
+      <x>710</x>
       <y>80</y>
       <w>30</w>
       <h>690</h>
@@ -50,7 +50,7 @@ bg=red
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>730</x>
+      <x>710</x>
       <y>510</y>
       <w>20</w>
       <h>60</h>
@@ -61,7 +61,7 @@ bg=red
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>510</x>
+      <x>490</x>
       <y>520</y>
       <w>240</w>
       <h>40</h>
@@ -73,7 +73,7 @@ attivaUpgrade(upgrade)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>430</x>
+      <x>410</x>
       <y>450</y>
       <w>400</w>
       <h>150</h>
@@ -87,7 +87,7 @@ opt
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>730</x>
+      <x>710</x>
       <y>640</y>
       <w>20</w>
       <h>60</h>
@@ -98,7 +98,7 @@ opt
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>730</x>
+      <x>710</x>
       <y>360</y>
       <w>20</w>
       <h>60</h>
@@ -109,7 +109,7 @@ opt
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>510</x>
+      <x>490</x>
       <y>650</y>
       <w>240</w>
       <h>40</h>
@@ -121,7 +121,7 @@ esito sottofase</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>380</x>
+      <x>360</x>
       <y>230</y>
       <w>490</w>
       <h>520</h>
@@ -135,7 +135,7 @@ loop
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>430</x>
+      <x>410</x>
       <y>290</y>
       <w>400</w>
       <h>140</h>
@@ -150,7 +150,7 @@ opt
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>320</x>
+      <x>300</x>
       <y>170</y>
       <w>610</w>
       <h>610</h>
@@ -164,7 +164,7 @@ loop
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>510</x>
+      <x>490</x>
       <y>370</y>
       <w>240</w>
       <h>40</h>

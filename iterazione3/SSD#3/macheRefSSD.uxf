@@ -5,7 +5,7 @@
     <id>UMLActor</id>
     <coordinates>
       <x>396</x>
-      <y>55</y>
+      <y>0</y>
       <w>88</w>
       <h>121</h>
     </coordinates>
@@ -16,7 +16,7 @@
     <id>UMLClass</id>
     <coordinates>
       <x>627</x>
-      <y>110</y>
+      <y>55</y>
       <w>88</w>
       <h>33</h>
     </coordinates>
@@ -29,7 +29,7 @@ bg=red
     <id>Relation</id>
     <coordinates>
       <x>429</x>
-      <y>154</y>
+      <y>99</y>
       <w>33</w>
       <h>583</h>
     </coordinates>
@@ -40,7 +40,7 @@ bg=red
     <id>Relation</id>
     <coordinates>
       <x>660</x>
-      <y>132</y>
+      <y>77</y>
       <w>33</w>
       <h>605</h>
     </coordinates>
@@ -51,19 +51,19 @@ bg=red
     <id>Relation</id>
     <coordinates>
       <x>429</x>
-      <y>275</y>
-      <w>264</w>
+      <y>231</y>
+      <w>253</w>
       <h>44</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 pool schede istruzione</panel_attributes>
-    <additional_attributes>10.0;20.0;220.0;20.0</additional_attributes>
+    <additional_attributes>10.0;20.0;210.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLFrame</id>
     <coordinates>
       <x>297</x>
-      <y>363</y>
+      <y>308</y>
       <w>517</w>
       <h>77</h>
     </coordinates>
@@ -76,7 +76,7 @@ pool schede istruzione</panel_attributes>
     <id>UMLFrame</id>
     <coordinates>
       <x>297</x>
-      <y>627</y>
+      <y>572</y>
       <w>517</w>
       <h>88</h>
     </coordinates>
@@ -89,7 +89,7 @@ pool schede istruzione</panel_attributes>
     <id>UMLFrame</id>
     <coordinates>
       <x>297</x>
-      <y>528</y>
+      <y>473</y>
       <w>517</w>
       <h>77</h>
     </coordinates>
@@ -102,7 +102,7 @@ pool schede istruzione</panel_attributes>
     <id>UMLFrame</id>
     <coordinates>
       <x>297</x>
-      <y>198</y>
+      <y>143</y>
       <w>517</w>
       <h>154</h>
     </coordinates>
@@ -116,7 +116,7 @@ loop
     <id>UMLGeneric</id>
     <coordinates>
       <x>660</x>
-      <y>451</y>
+      <y>396</y>
       <w>22</w>
       <h>66</h>
     </coordinates>
@@ -127,12 +127,35 @@ loop
     <id>Relation</id>
     <coordinates>
       <x>429</x>
-      <y>462</y>
+      <y>407</y>
       <w>253</w>
       <h>44</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 iniziaManche()</panel_attributes>
     <additional_attributes>210.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>429</x>
+      <y>209</y>
+      <w>253</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+getSchede()</panel_attributes>
+    <additional_attributes>210.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>660</x>
+      <y>209</y>
+      <w>22</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
   </element>
 </diagram>

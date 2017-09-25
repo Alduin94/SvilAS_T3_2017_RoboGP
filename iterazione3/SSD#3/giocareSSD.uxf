@@ -5,7 +5,7 @@
     <id>UMLActor</id>
     <coordinates>
       <x>440</x>
-      <y>121</y>
+      <y>44</y>
       <w>88</w>
       <h>121</h>
     </coordinates>
@@ -16,7 +16,7 @@
     <id>UMLClass</id>
     <coordinates>
       <x>682</x>
-      <y>165</y>
+      <y>88</y>
       <w>88</w>
       <h>33</h>
     </coordinates>
@@ -29,7 +29,7 @@ bg=red
     <id>Relation</id>
     <coordinates>
       <x>473</x>
-      <y>187</y>
+      <y>110</y>
       <w>33</w>
       <h>660</h>
     </coordinates>
@@ -40,7 +40,7 @@ bg=red
     <id>Relation</id>
     <coordinates>
       <x>715</x>
-      <y>187</y>
+      <y>110</y>
       <w>33</w>
       <h>660</h>
     </coordinates>
@@ -51,7 +51,7 @@ bg=red
     <id>UMLFrame</id>
     <coordinates>
       <x>308</x>
-      <y>286</y>
+      <y>209</y>
       <w>616</w>
       <h>539</h>
     </coordinates>
@@ -67,7 +67,7 @@ loop
     <id>UMLFrame</id>
     <coordinates>
       <x>341</x>
-      <y>385</y>
+      <y>308</y>
       <w>517</w>
       <h>77</h>
     </coordinates>
@@ -80,7 +80,7 @@ loop
     <id>UMLFrame</id>
     <coordinates>
       <x>341</x>
-      <y>495</y>
+      <y>418</y>
       <w>539</w>
       <h>121</h>
     </coordinates>
@@ -94,7 +94,7 @@ opt
     <id>UMLGeneric</id>
     <coordinates>
       <x>715</x>
-      <y>693</y>
+      <y>616</y>
       <w>22</w>
       <h>66</h>
     </coordinates>
@@ -105,7 +105,7 @@ opt
     <id>Relation</id>
     <coordinates>
       <x>473</x>
-      <y>704</y>
+      <y>627</y>
       <w>264</w>
       <h>44</h>
     </coordinates>
@@ -117,7 +117,7 @@ esciDaPartita()</panel_attributes>
     <id>UMLFrame</id>
     <coordinates>
       <x>341</x>
-      <y>638</y>
+      <y>561</y>
       <w>539</w>
       <h>143</h>
     </coordinates>
@@ -131,7 +131,7 @@ opt
     <id>UMLGeneric</id>
     <coordinates>
       <x>715</x>
-      <y>539</y>
+      <y>462</y>
       <w>22</w>
       <h>66</h>
     </coordinates>
@@ -142,12 +142,12 @@ opt
     <id>Relation</id>
     <coordinates>
       <x>473</x>
-      <y>550</y>
+      <y>473</y>
       <w>264</w>
       <h>44</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
-vite rimanenti</panel_attributes>
+ultimo ceckpoint robot</panel_attributes>
     <additional_attributes>10.0;20.0;220.0;20.0</additional_attributes>
   </element>
 </diagram>
